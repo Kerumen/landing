@@ -1,0 +1,14 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  margin: 15px auto;
+  max-width: 1170px;
+  padding: 15px;
+}
+
+.links {
+  display: flex;
+  margin-left: auto;
+}
