@@ -119,6 +119,37 @@ class IndexPage extends Component {
             </div>
           </section>
         </Waypoint>
+        <section className={styles.thirdSection}>
+          <div className={styles.innerContainer}>
+            <TitleAndText
+              title="Unleash the power of the world’s crypto data"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
+      eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
+      Donec quis imperdiet ligula."
+              style={{ marginLeft: 30 }}
+            />
+            <div className={styles.timeline}>
+              <div className={styles.lines} />
+              <div className={styles.quarters}>
+                {[1, 2, 3].map(index => (
+                  <div key={index} className={styles.quarterBox}>
+                    <Title style={{ fontSize: 24, lineHeight: '24px' }}>
+                      Q3 2017
+                    </Title>
+                    <div className={styles.quarterLine} />
+                    <div>
+                      <ul className={styles.quarterContent}>
+                        <li>- Design creation</li>
+                        <li>- Architectural</li>
+                        <li>- Business advantages</li>
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </Layout>
     )
   }

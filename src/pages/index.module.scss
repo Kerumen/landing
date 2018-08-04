@@ -1,15 +1,27 @@
 @import '../styles/variables';
 
+.inner-container {
+  margin: 0px auto;
+  max-width: $container-width;
+}
+
 .first-section {
+  @extend .inner-container;
   padding-bottom: 200px;
 }
 
 .second-section {
+  @extend .inner-container;
   margin-top: 250px;
-  padding-bottom: 300px;
+  margin-bottom: 300px;
   color: $color-white;
   background: url('../images/home-3.png') center no-repeat;
-  // height: 1200px;
+}
+
+.third-section {
+  margin-top: 400px;
+  margin-bottom: 200px;
+  position: relative;
 }
 
 .head-content {
@@ -41,7 +53,7 @@
   background: $color-black;
 }
 
-.centeredBloc {
+.centered-bloc {
   text-align: center;
   max-width: 550px;
   margin: 0 auto;
@@ -59,4 +71,55 @@
   justify-content: space-between;
   padding: 0px 40px;
   margin-top: 150px;
+}
+
+.timeline {
+  // position: relative;
+}
+
+.lines {
+  position: absolute;
+  top: 365px;
+  left: -5px;
+  right: 0;
+  height: 30px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0px,
+    transparent 15px,
+    $color-black 0px,
+    $color-black 20px
+  );
+}
+
+.quarters {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.quarter-box {
+  width: 260px;
+  height: 260px;
+  padding: 30px;
+  background: rgba(254, 232, 254, 0.46);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quarter-line {
+  height: 60px;
+  width: 5px;
+  background: $color-black;
+}
+
+.quarter-content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
 }

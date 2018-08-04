@@ -8,7 +8,7 @@ const Timeline = () => {
   return (
     <div>
       <div className={styles.container}>
-        <div style={{ padding: '0px 50px 0px 15px' }}>
+        <div className={styles.inner}>
           <Title style={{ textAlign: 'right', marginBottom: 15 }}>
             8499 ETH
           </Title>
