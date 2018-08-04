@@ -9,6 +9,7 @@ import Button from '../components/Button'
 import Input from '../components/Input'
 
 import WhyBloc from './Index/WhyBloc'
+import Timeline from './Index/Timeline'
 
 import styles from './index.module.scss'
 
@@ -68,13 +69,12 @@ class IndexPage extends Component {
         >
           <section className={styles.secondSection}>
             <div
-              className={styles.mask}
-              style={{
-                background: backgroundBlack ? '#111111' : 'transparent',
-              }}
+              className={
+                backgroundBlack ? styles.blackMask : styles.transparentMask
+              }
             />
-            <div style={{ position: 'relative', zIndex: 5, height: 1200 }}>
-              <div className={styles.why}>
+            <div style={{ position: 'relative', zIndex: 5 }}>
+              <div className={styles.centeredBloc}>
                 <Title style={{ marginBottom: 30 }}>
                   Why are we pursuing an ICO?
                 </Title>
@@ -107,7 +107,7 @@ class IndexPage extends Component {
                   content="Each semester until the second anniversary of the ICO, a 5% bonus of the TDA Tokens held by each investor will be paid by Token Data, provided the investor has never transferred the Tokens to a different address than granted during the ICO."
                 />
               </div>
-              <div className={styles.why} style={{ marginTop: 300 }}>
+              <div className={styles.centeredBloc} style={{ marginTop: 300 }}>
                 <Title style={{ marginBottom: 30 }}>TDA Token & ICO</Title>
                 <div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -115,6 +115,7 @@ class IndexPage extends Component {
                   sit amet rhoncus justo. Donec quis imperdiet ligula.
                 </div>
               </div>
+              <Timeline />
             </div>
           </section>
         </Waypoint>
