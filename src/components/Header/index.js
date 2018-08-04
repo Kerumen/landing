@@ -5,17 +5,21 @@ import MenuLink from './MenuLink'
 
 import styles from './styles.module.scss'
 
-const Header = ({ siteTitle }) => (
-  <div className={styles.header}>
-    <div>
-      <Link to="/">{siteTitle}</Link>
-    </div>
-    <div className={styles.links}>
-      <MenuLink to="/technology">Technology</MenuLink>
-      <MenuLink to="/whitepaper">Whitepaper</MenuLink>
-      <MenuLink to="/team">Team</MenuLink>
-      <MenuLink to="/blog">Blog</MenuLink>
-      <MenuLink to="/social">Social</MenuLink>
+const Header = ({ siteTitle, backgroundBlack }) => (
+  <div className={backgroundBlack ? styles.headerBlack : styles.header}>
+    <div className={styles.container}>
+      <div>
+        <Link to="/" className={styles.logo}>
+          {siteTitle}
+        </Link>
+      </div>
+      <div className={styles.links}>
+        <MenuLink to="/technology">Technology</MenuLink>
+        <MenuLink to="/whitepaper">Whitepaper</MenuLink>
+        <MenuLink to="/team">Team</MenuLink>
+        <MenuLink to="/blog">Blog</MenuLink>
+        <MenuLink to="/social">Social</MenuLink>
+      </div>
     </div>
   </div>
 )

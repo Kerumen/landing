@@ -9,7 +9,7 @@ import '../styles/index.scss'
 
 import Header from './Header'
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, backgroundBlack }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,7 +31,10 @@ const Layout = ({ children, data }) => (
             },
           ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          backgroundBlack={backgroundBlack}
+        />
         <div
           style={{
             margin: '0 auto',

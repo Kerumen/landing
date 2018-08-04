@@ -1,5 +1,62 @@
+@import '../styles/variables';
+
+.first-section {
+  padding-bottom: 200px;
+}
+
+.second-section {
+  margin-top: 250px;
+  padding-bottom: 400px;
+  color: $color-white;
+  background: url('../images/home-3.png') center no-repeat;
+  // height: 1200px;
+}
+
 .head-content {
   display: flex;
   align-items: center;
   margin-top: 80px;
+}
+
+.rectangle {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  z-index: 1;
+  background-image: linear-gradient(90deg, #f4beaf 2%, #fabcfc 99%);
+  opacity: 0.35;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  transition: background ease 0.4s;
+}
+
+.why {
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.background-image {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.why-blocs-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin-top: 150px;
 }
