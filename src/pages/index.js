@@ -6,6 +6,8 @@ import Image from '../components/Image'
 import Button from '../components/Button'
 import Input from '../components/Input'
 
+import styles from './index.module.scss'
+
 const SubscribeForm = () => {
   return (
     <div style={{ display: 'flex' }}>
@@ -22,7 +24,7 @@ const SeeMore = () => <Button variation="orange">See more</Button>
 
 const IndexPage = () => (
   <Layout>
-    <div style={{ display: 'flex', alignItems: 'center', marginTop: 60 }}>
+    <div className={styles.headContent}>
       <TitleAndText
         title="Unleash the power of the world’s crypto data"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
@@ -33,7 +35,7 @@ const IndexPage = () => (
       />
       <Image name="home-1" />
     </div>
-    <div style={{ display: 'flex', alignItems: 'center', marginTop: 85 }}>
+    <div className={styles.headContent}>
       <Image name="home-2" />
       <TitleAndText
         title="Technology at it’s best to serve business intelligence"
