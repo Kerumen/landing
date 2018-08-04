@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.button {
+  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  width: 180px;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+}
+
+.black {
+  @extend .button;
+
+  color: $color-white;
+  background: $color-black;
+}
+
+.orange {
+  @extend .button;
+
+  color: $color-black;
+  background: rgba(246, 209, 111, 0.5);
+}

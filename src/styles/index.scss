@@ -1,0 +1,27 @@
+@import 'variables.scss';
+
+html,
+body {
+  font-family: 'Din Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  background-color: $color-white;
+  color: $color-black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: $color-black;
+}

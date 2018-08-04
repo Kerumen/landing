@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import 'normalize.css'
-import './layout.css'
+import '../fonts/fonts.css'
+import '../styles/index.scss'
 
 import Header from './Header'
 
@@ -33,8 +34,6 @@ const Layout = ({ children, data }) => (
           style={{
             margin: '0 auto',
             maxWidth: 1170,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
           }}
         >
           {children}
