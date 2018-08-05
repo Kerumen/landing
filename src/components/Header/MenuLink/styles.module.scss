@@ -1,9 +1,25 @@
+@import '../../../styles/variables.scss';
+
 .link {
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   padding: 6px 15px;
-  color: inherit;
+  color: $color-black;
   &:not(:last-child) {
     margin-right: 30px;
+  }
+  &:hover {
+    background: #fcddcf;
+  }
+}
+
+.black-link {
+  @extend .link;
+
+  color: $color-white;
+  &:hover {
+    color: $color-black;
+    background: $color-white;
   }
 }

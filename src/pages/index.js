@@ -6,21 +6,21 @@ import TitleAndText from '../components/TitleAndText'
 import Title from '../components/Title'
 import Image from '../components/Image'
 import Button from '../components/Button'
-import Input from '../components/Input'
 
 import WhyBloc from './Index/WhyBloc'
 import Timeline from './Index/Timeline'
 
 import styles from './index.module.scss'
 
-const SubscribeForm = () => {
+const WhitelistButton = () => {
   return (
-    <div style={{ display: 'flex' }}>
-      <Input
-        placeholder="Email for the white list"
-        style={{ flex: 1, marginRight: 15 }}
-      />
-      <Button>Subscribe</Button>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <Button style={{ width: 225, marginRight: 30 }}>Get whitelisted</Button>
+      <div
+        style={{ fontWeight: 'bold', fontSize: 14, textTransform: 'uppercase' }}
+      >
+        TDA ICO to be announced
+      </div>
     </div>
   )
 }
@@ -28,17 +28,17 @@ const SubscribeForm = () => {
 const SeeMore = () => <Button variation="orange">See more</Button>
 
 class IndexPage extends Component {
-  state = { backgroundBlack: false }
+  state = { black: false }
 
-  handleWaypointEnter = () => this.setState({ backgroundBlack: true })
+  handleWaypointEnter = () => this.setState({ black: true })
 
-  handleWaypointLeave = () => this.setState({ backgroundBlack: false })
+  handleWaypointLeave = () => this.setState({ black: false })
 
   render() {
-    const { backgroundBlack } = this.state
+    const { black } = this.state
 
     return (
-      <Layout backgroundBlack={backgroundBlack}>
+      <Layout black={black}>
         <section className={styles.firstSection}>
           <div className={styles.headContent}>
             <TitleAndText
@@ -46,7 +46,7 @@ class IndexPage extends Component {
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
       eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
       Donec quis imperdiet ligula."
-              renderExtra={SubscribeForm}
+              renderExtra={WhitelistButton}
               withRectangle
               style={{ position: 'relative', marginLeft: 30 }}
             />
@@ -69,9 +69,7 @@ class IndexPage extends Component {
         >
           <section className={styles.secondSection}>
             <div
-              className={
-                backgroundBlack ? styles.blackMask : styles.transparentMask
-              }
+              className={black ? styles.blackMask : styles.transparentMask}
             />
             <div style={{ position: 'relative', zIndex: 5 }}>
               <div className={styles.centeredBloc}>
