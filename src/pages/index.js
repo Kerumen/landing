@@ -37,7 +37,6 @@ const BallVideo = ({ name }) => (
     width={600}
   >
     <source src={require(`../videos/${name}.webm`)} type="video/webm" />
-    <source src={require(`../videos/${name}.mp4`)} type="video/mp4" />
   </video>
 )
 
