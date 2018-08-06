@@ -15,6 +15,7 @@ const Header = ({ black }) => (
               ? require('../../images/logo-white.svg')
               : require('../../images/logo.svg')
           }
+          alt="logo"
         />
       </Link>
       <div className={styles.links}>

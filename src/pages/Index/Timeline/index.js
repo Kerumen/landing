@@ -1,40 +1,56 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import Title from '../../../components/Title'
 
 import styles from './styles.module.scss'
 
-const Timeline = () => {
-  return (
-    <div>
-      <div className={styles.container}>
-        <div className={styles.inner}>
-          <Title style={{ textAlign: 'right', marginBottom: 15 }}>
-            8499 ETH
-          </Title>
-          <div className={styles.bars}>
-            <div className={styles.background} />
-            <div className={styles.bar} />
-          </div>
-        </div>
-        <div className={styles.stages}>
-          {['1st', '2nd', '3rd', '4th'].map((nb, index) => (
-            <div key={index} className={styles.stage}>
-              <div className={styles.stageIndicator} />
-              <div style={{ opacity: index >= 2 ? 0.5 : 1 }}>
-                <div className={styles.stageTitle}>{nb} stage</div>
-                <div className={styles.stageContent}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                  lobortis eget libero eget consectetur. Sed a luctus mauris,
-                  sit amet rhoncus justo. Donec quis imperdiet ligula.
-                </div>
+class Timeline extends Component {
+  state = { width: 0, height: 0 }
+
+  componentDidMount() {
+    this.updateWindowDimensions()
+    window.addEventListener('resize', this.updateWindowDimensions)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight })
+  }
+
+  render() {
+    const { width } = this.state
+    const containerWidth = 1170
+    const initialSpacing = 90
+    const position = initialSpacing + Math.max((width - containerWidth) / 2, 0)
+    const gap = 17
+    const padding = Math.ceil(position / gap) * gap
+
+    return (
+      <div className={styles.timeline}>
+        <div className={styles.inner} style={{ padding: `0px ${padding}px` }}>
+          <div className={styles.lines} />
+          {[1, 2, 3, 4, 5, 6].map(index => (
+            <div key={index} className={styles.quarterBox}>
+              <Title style={{ fontSize: 24, lineHeight: '24px' }}>
+                Q3 2017
+              </Title>
+              <div className={styles.quarterLine} />
+              <div>
+                <ul className={styles.quarterContent}>
+                  <li>- Design creation</li>
+                  <li>- Architectural</li>
+                  <li>- Business advantages</li>
+                </ul>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Timeline

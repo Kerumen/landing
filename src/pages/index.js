@@ -8,6 +8,7 @@ import Image from '../components/Image'
 import Button from '../components/Button'
 
 import WhyBloc from './Index/WhyBloc'
+import ICOProgress from './Index/ICOProgress'
 import Timeline from './Index/Timeline'
 
 import styles from './index.module.scss'
@@ -113,7 +114,7 @@ class IndexPage extends Component {
                   sit amet rhoncus justo. Donec quis imperdiet ligula.
                 </div>
               </div>
-              <Timeline />
+              <ICOProgress />
             </div>
           </section>
         </Waypoint>
@@ -126,27 +127,8 @@ class IndexPage extends Component {
       Donec quis imperdiet ligula."
               style={{ marginLeft: 30 }}
             />
-            <div className={styles.timeline}>
-              <div className={styles.lines} />
-              <div className={styles.quarters}>
-                {[1, 2, 3].map(index => (
-                  <div key={index} className={styles.quarterBox}>
-                    <Title style={{ fontSize: 24, lineHeight: '24px' }}>
-                      Q3 2017
-                    </Title>
-                    <div className={styles.quarterLine} />
-                    <div>
-                      <ul className={styles.quarterContent}>
-                        <li>- Design creation</li>
-                        <li>- Architectural</li>
-                        <li>- Business advantages</li>
-                      </ul>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
+          <Timeline />
         </section>
       </Layout>
     )
