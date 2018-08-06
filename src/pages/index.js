@@ -28,12 +28,27 @@ const WhitelistButton = () => {
 
 const SeeMore = () => <Button variation="orange">See more</Button>
 
+const BallVideo = ({ name }) => (
+  <video
+    loop
+    preload="auto"
+    autoPlay
+    onContextMenu={e => e.preventDefault()}
+    width={600}
+  >
+    <source src={require(`../videos/${name}.webm`)} type="video/webm" />
+    <source src={require(`../videos/${name}.mp4`)} type="video/mp4" />
+  </video>
+)
+
 class IndexPage extends Component {
   state = { black: false }
 
   handleWaypointEnter = () => this.setState({ black: true })
 
   handleWaypointLeave = () => this.setState({ black: false })
+
+  onContextMenu = e => e.preventDefault()
 
   render() {
     const { black } = this.state
@@ -51,10 +66,10 @@ class IndexPage extends Component {
               withRectangle
               style={{ position: 'relative', marginLeft: 30 }}
             />
-            <Image name="home-1" />
+            <BallVideo name="purple" />
           </div>
           <div className={styles.headContent}>
-            <Image name="home-2" />
+            <BallVideo name="yellow" />
             <TitleAndText
               title="Technology at it’s best to serve business intelligence"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
@@ -85,7 +100,7 @@ class IndexPage extends Component {
                   option for us to raise funding
                 </div>
               </div>
-              <Image name="home-3" className={styles.backgroundImage} />
+              <Image name="tornado" className={styles.backgroundImage} />
               <div className={styles.whyBlocsRow}>
                 <WhyBloc
                   title="Utility Program"
