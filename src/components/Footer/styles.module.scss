@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  max-width: $container-width;
+  margin: 300px auto 500px;
+  display: flex;
+  padding: 0 60px;
+}
+
+.column {
+  font-size: 16px;
+  font-weight: 500;
+  color: #cbcbcd;
+  text-align: justify;
+  &:last-child {
+    margin-left: 30px;
+  }
+}
+
+.links {
+  margin: 20px 0 25px;
+}
+
+.link {
+  color: $color-black;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.social {
+  margin-top: 30px;
+}
+
+.social-link {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}

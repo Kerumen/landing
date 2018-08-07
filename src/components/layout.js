@@ -8,6 +8,7 @@ import '../fonts/fonts.css'
 import '../styles/index.scss'
 
 import Header from './Header'
+import Footer from './Footer'
 
 const Layout = ({ children, black }) => (
   <StaticQuery
@@ -25,6 +26,7 @@ const Layout = ({ children, black }) => (
         <Helmet title={data.site.siteMetadata.title} />
         <Header black={black} />
         <div>{children}</div>
+        <Footer />
       </>
     )}
   />

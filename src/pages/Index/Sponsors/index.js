@@ -36,7 +36,7 @@ const images = [
 ]
 
 const Sponsors = () => (
-  <div>
+  <div className={styles.container}>
     {images.map((row, index) => (
       <div key={index} className={styles.row}>
         {row.map(image => (
