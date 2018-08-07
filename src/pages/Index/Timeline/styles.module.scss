@@ -34,13 +34,19 @@
   width: 260px;
   height: 260px;
   padding: 30px;
-  background: rgba(254, 232, 254, 0.46);
+  background: rgba(#fee8fe, 0.46);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   &:not(:last-child) {
     margin-right: 182px;
   }
+}
+
+.quarter-box-future {
+  @extend .quarter-box;
+
+  background: rgba(#fcddcf, 0.46);
 }
 
 .quarter-line {

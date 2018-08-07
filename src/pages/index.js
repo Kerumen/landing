@@ -35,9 +35,8 @@ const BallVideo = ({ name }) => (
     autoPlay
     onContextMenu={e => e.preventDefault()}
     width={600}
-  >
-    <source src={require(`../videos/${name}.webm`)} type="video/webm" />
-  </video>
+    src={require(`../videos/${name}.webm`)}
+  />
 )
 
 class IndexPage extends Component {

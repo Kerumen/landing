@@ -33,7 +33,12 @@ class Timeline extends Component {
         <div className={styles.inner} style={{ padding: `0px ${padding}px` }}>
           <div className={styles.lines} />
           {[1, 2, 3, 4, 5, 6].map(index => (
-            <div key={index} className={styles.quarterBox}>
+            <div
+              key={index}
+              className={
+                index < 4 ? styles.quarterBox : styles.quarterBoxFuture
+              }
+            >
               <Title style={{ fontSize: 24, lineHeight: '24px' }}>
                 Q3 2017
               </Title>
