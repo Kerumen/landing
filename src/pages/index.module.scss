@@ -23,6 +23,12 @@
   position: relative;
 }
 
+.fourth-section {
+  @extend .inner-container;
+
+  margin-top: 300px;
+}
+
 .head-content {
   display: flex;
   align-items: center;

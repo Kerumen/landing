@@ -10,6 +10,7 @@ import Button from '../components/Button'
 import WhyBloc from './Index/WhyBloc'
 import ICOProgress from './Index/ICOProgress'
 import Timeline from './Index/Timeline'
+import Sponsors from './Index/Sponsors'
 
 import styles from './index.module.scss'
 
@@ -142,6 +143,12 @@ class IndexPage extends Component {
             />
           </div>
           <Timeline />
+        </section>
+        <section className={styles.fourthSection}>
+          <Title style={{ textTransform: 'uppercase', textAlign: 'center' }}>
+            Support & Recognition
+          </Title>
+          <Sponsors />
         </section>
       </Layout>
     )
