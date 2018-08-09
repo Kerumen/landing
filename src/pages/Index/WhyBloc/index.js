@@ -6,7 +6,7 @@ import styles from './styles.module.scss'
 
 const WhyBloc = ({ title, content }) => (
   <div className={styles.container}>
-    <Title style={{ fontSize: 36, lineHeight: '36px' }}>{title}</Title>
+    <Title style={{ fontSize: 36, lineHeight: 1 }}>{title}</Title>
     <div className={styles.line} />
     <div>{content}</div>
   </div>

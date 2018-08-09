@@ -1,0 +1,44 @@
+@import '../styles/variables';
+
+.inner-container {
+  margin: 0px auto;
+  max-width: $container-width;
+}
+
+.first-section {
+  @extend .inner-container;
+  padding-bottom: 200px;
+}
+
+.second-section {
+  @extend .inner-container;
+  display: flex;
+}
+
+.third-section {
+  @extend .inner-container;
+  display: flex;
+}
+
+.fourth-section {
+  @extend .inner-container;
+}
+
+.head-content {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.box {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid $color-black;
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background: $color-black;
+}

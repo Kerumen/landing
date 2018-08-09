@@ -39,9 +39,7 @@ class Timeline extends Component {
                 index < 4 ? styles.quarterBox : styles.quarterBoxFuture
               }
             >
-              <Title style={{ fontSize: 24, lineHeight: '24px' }}>
-                Q3 2017
-              </Title>
+              <Title style={{ fontSize: 24, lineHeight: 1 }}>Q3 2017</Title>
               <div className={styles.quarterLine} />
               <div>
                 <ul className={styles.quarterContent}>
