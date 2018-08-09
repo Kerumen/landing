@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.section {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 57px);
+}
+
+.section-container {
+  @extend .section;
+
+  margin: 0px auto;
+  max-width: $container-width;
+}

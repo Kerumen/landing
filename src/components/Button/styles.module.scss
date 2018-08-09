@@ -10,6 +10,9 @@
   height: 45px;
   cursor: pointer;
   outline: none;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .black {

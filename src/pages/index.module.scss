@@ -5,11 +5,6 @@
   max-width: $container-width;
 }
 
-.first-section {
-  @extend .inner-container;
-  padding-bottom: 200px;
-}
-
 .second-section {
   @extend .inner-container;
   margin-top: 250px;
@@ -27,12 +22,6 @@
   @extend .inner-container;
 
   margin-top: 300px;
-}
-
-.head-content {
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
 }
 
 .mask {

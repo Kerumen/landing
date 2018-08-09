@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Waypoint from 'react-waypoint'
 
 import Layout from '../components/layout'
+import Section from '../components/Section'
 import TitleAndText from '../components/TitleAndText'
 import Title from '../components/Title'
 import Image from '../components/Image'
@@ -54,30 +55,28 @@ class IndexPage extends Component {
 
     return (
       <Layout black={black}>
-        <section className={styles.firstSection}>
-          <div className={styles.headContent}>
-            <TitleAndText
-              title="Unleash the power of the world’s crypto data"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
+        <Section row>
+          <TitleAndText
+            title="Unleash the power of the world’s crypto data"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
       eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
       Donec quis imperdiet ligula."
-              renderExtra={WhitelistButton}
-              withRectangle
-              style={{ position: 'relative', marginLeft: 30 }}
-            />
-            <BallVideo name="purple" />
-          </div>
-          <div className={styles.headContent}>
-            <BallVideo name="yellow" />
-            <TitleAndText
-              title="Technology at it’s best to serve business intelligence"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
+            renderExtra={WhitelistButton}
+            withRectangle
+            style={{ position: 'relative', marginLeft: 30 }}
+          />
+          <BallVideo name="purple" />
+        </Section>
+        <Section row>
+          <BallVideo name="yellow" />
+          <TitleAndText
+            title="Technology at it’s best to serve business intelligence"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
       eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
       Donec quis imperdiet ligula."
-              renderExtra={SeeMore}
-            />
-          </div>
-        </section>
+            renderExtra={SeeMore}
+          />
+        </Section>
         <Waypoint
           onEnter={this.handleWaypointEnter}
           onLeave={this.handleWaypointLeave}
@@ -144,12 +143,12 @@ class IndexPage extends Component {
           </div>
           <Timeline />
         </section>
-        <section className={styles.fourthSection}>
+        <Section>
           <Title style={{ textTransform: 'uppercase', textAlign: 'center' }}>
             Support & Recognition
           </Title>
           <Sponsors />
-        </section>
+        </Section>
       </Layout>
     )
   }
