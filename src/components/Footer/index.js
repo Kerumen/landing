@@ -89,26 +89,32 @@ const Footer = () => (
       <p>© 2018 TokenDATA. All rights reserved.</p>
       <div className={styles.social}>
         <img
+          alt="linkedin"
           className={styles.socialLink}
           src={require('../../images/social/linkedin.svg')}
         />
         <img
+          alt="facebook"
           className={styles.socialLink}
           src={require('../../images/social/facebook.svg')}
         />
         <img
+          alt="twitter"
           className={styles.socialLink}
           src={require('../../images/social/twitter.svg')}
         />
         <img
+          alt="slack"
           className={styles.socialLink}
           src={require('../../images/social/slack.svg')}
         />
         <img
+          alt="telegram"
           className={styles.socialLink}
           src={require('../../images/social/telegram.svg')}
         />
         <img
+          alt="wechat"
           className={styles.socialLink}
           src={require('../../images/social/wechat.svg')}
         />
