@@ -3,6 +3,7 @@
 .inner-container {
   margin: 0px auto;
   max-width: $container-width;
+  width: 100%;
 }
 
 .second-section {
@@ -10,18 +11,6 @@
   margin-top: 250px;
   margin-bottom: 300px;
   color: $color-white;
-}
-
-.third-section {
-  margin-top: 400px;
-  margin-bottom: 200px;
-  position: relative;
-}
-
-.fourth-section {
-  @extend .inner-container;
-
-  margin-top: 300px;
 }
 
 .mask {

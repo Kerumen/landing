@@ -56,7 +56,7 @@ class IndexPage extends Component {
     const { black } = this.state
 
     return (
-      <Layout black={black}>
+      <Layout color={black ? 'black' : null}>
         <Section row>
           <TitleAndText
             title="Unleash the power of the world’s crypto data"
@@ -133,7 +133,7 @@ class IndexPage extends Component {
             </div>
           </section>
         </Waypoint>
-        <section className={styles.thirdSection}>
+        <Section container={false} style={{ alignItems: 'flex-start' }}>
           <div className={styles.innerContainer}>
             <TitleAndText
               title="Unleash the power of the world’s crypto data"
@@ -144,7 +144,7 @@ class IndexPage extends Component {
             />
           </div>
           <Timeline />
-        </section>
+        </Section>
         <Section>
           <Title style={{ textTransform: 'uppercase', textAlign: 'center' }}>
             Support & Recognition

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Waypoint from 'react-waypoint'
 
 import Layout from '../components/layout'
 import Section from '../components/Section'
@@ -80,22 +81,37 @@ const TagRectangle = ({ children, white, width }) => (
 )
 
 class TechnologyPage extends Component {
+  state = { green: false }
+
+  handleWaypointEnter = () => this.setState({ green: true })
+
+  handleWaypointLeave = () => this.setState({ green: false })
+
   render() {
+    const { green } = this.state
+
     return (
-      <Layout>
-        <div style={{ height: 664, background: '#EBF4EC', overflow: 'hidden' }}>
-          <Section style={{ height: '100%', position: 'relative' }}>
-            <TitleAndText
-              title="We are the central nervous system of global crypto asset management"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
+      <Layout color={green ? 'green' : null}>
+        <Waypoint
+          onEnter={this.handleWaypointEnter}
+          onLeave={this.handleWaypointLeave}
+        >
+          <div
+            style={{ height: 664, background: '#EBF4EC', overflow: 'hidden' }}
+          >
+            <Section style={{ height: '100%', position: 'relative' }}>
+              <TitleAndText
+                title="We are the central nervous system of global crypto asset management"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
       eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
       Donec quis imperdiet ligula."
-              renderExtra={Subscribe}
-              style={{ marginLeft: 30 }}
-            />
-            <Image name="dots" className={styles.backgroundImage} />
-          </Section>
-        </div>
+                renderExtra={Subscribe}
+                style={{ marginLeft: 30 }}
+              />
+              <Image name="dots" className={styles.backgroundImage} />
+            </Section>
+          </div>
+        </Waypoint>
         <Section row>
           <div
             style={{ position: 'relative', display: 'flex', paddingLeft: 15 }}

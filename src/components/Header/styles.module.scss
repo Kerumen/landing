@@ -9,11 +9,17 @@
   transition: background ease 0.4s;
 }
 
-.header-black {
+.black {
   @extend .header;
 
   background: $color-black;
   color: $color-white;
+}
+
+.green {
+  @extend .header;
+
+  background: #ebf4ec;
 }
 
 .container {

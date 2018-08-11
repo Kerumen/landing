@@ -10,7 +10,7 @@ import '../styles/index.scss'
 import Header from './Header'
 import Footer from './Footer'
 
-const Layout = ({ children, black }) => (
+const Layout = ({ children, color }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -24,7 +24,7 @@ const Layout = ({ children, black }) => (
     render={data => (
       <>
         <Helmet title={data.site.siteMetadata.title} />
-        <Header black={black} />
+        <Header color={color} />
         <div>{children}</div>
         <Footer />
       </>
