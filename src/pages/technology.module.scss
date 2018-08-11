@@ -60,6 +60,49 @@
   );
 }
 
+.terminal {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background: $color-black;
+  width: 550px;
+  height: 250px;
+  color: $color-white;
+  padding: 30px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  & > div:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.terminal-window {
+  width: 550px;
+  height: 360px;
+  background: #ebf4ec;
+  padding: 15px;
+  display: flex;
+}
+
+.terminal-window-circle {
+  background: $color-white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+.techno-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  & > img {
+    margin-left: 30px;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

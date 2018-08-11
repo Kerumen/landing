@@ -59,6 +59,13 @@ const HorizontalBox = ({ title, black }) => {
   )
 }
 
+const APIDescription = ({ title, description }) => (
+  <div style={{ marginTop: 25 }}>
+    <div style={{ fontWeight: 'bold' }}>{title}</div>
+    <div>{description}</div>
+  </div>
+)
+
 class TechnologyPage extends Component {
   render() {
     return (
@@ -181,6 +188,51 @@ class TechnologyPage extends Component {
                 orders to a suite of destinations, empowering traders to
                 optimize execution
               </p>
+            </div>
+          </div>
+        </Section>
+        <Section row>
+          <div>
+            <Title>Millions of datasets, One API</Title>
+            <APIDescription
+              title="All The Data You Want"
+              description="Tokendata brings together over 20 million financial and economic
+                datasets from over 500 sources on one easy-to-use platform."
+            />
+            <APIDescription
+              title="One Single Interface"
+              description="All datasets on Tokendata are available via the same API, irrespective of who originally published the data or in what format."
+            />
+            <APIDescription
+              title="New Data Added Weekly"
+              description="New datasets are added to Tokendata every week. Need some data we don’t have yet? Email us and we can add it for you."
+            />
+            <APIDescription
+              title="The Last API You’ll Ever Need"
+              description="Quandl abstracts away your need to handle multiple sources and ever-changing publication formats. Get your data via Tokendata, and don’t worry about fickle publishers ever again."
+            />
+          </div>
+          <div style={{ marginLeft: 60, position: 'relative' }}>
+            <div className={styles.terminalWindow}>
+              <div className={styles.terminalWindowCircle} />
+              <div className={styles.terminalWindowCircle} />
+              <div className={styles.terminalWindowCircle} />
+
+              <div className={styles.terminal}>
+                <div>$ curl https://tokendata.ai/v1/datasets \</div>
+                <div>-u sk_test_BQokikJOvBiI2HlWgH4olfQ2: \</div>
+                <div>-d source=tok_1Cr8602eZvKYlo2C9nR4gakO \</div>
+                <div>-d description="Anthony Smith" \</div>
+                <div>-d email="anthony.smith.78@example.com"</div>
+              </div>
+            </div>
+            <div className={styles.technoContainer}>
+              <img src={require('../images/techno/excel.svg')} />
+              <img src={require('../images/techno/python.svg')} />
+              <img src={require('../images/techno/java.svg')} />
+              <img src={require('../images/techno/javascript.svg')} />
+              <img src={require('../images/techno/xml.svg')} />
+              <img src={require('../images/techno/r.svg')} />
             </div>
           </div>
         </Section>
