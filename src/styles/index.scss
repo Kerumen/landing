@@ -6,7 +6,6 @@ body {
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
   font-size: 18px;
-  line-height: 1.1;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   box-sizing: border-box;
@@ -24,4 +23,8 @@ a,
 a:visited,
 a:focus {
   text-decoration: none;
+}
+
+p {
+  margin-top: 0;
 }

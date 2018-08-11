@@ -1,44 +1,70 @@
 @import '../styles/variables';
 
-.inner-container {
-  margin: 0px auto;
-  max-width: $container-width;
-}
-
-.first-section {
-  @extend .inner-container;
-  padding-bottom: 200px;
-}
-
-.second-section {
-  @extend .inner-container;
-  display: flex;
-}
-
-.third-section {
-  @extend .inner-container;
-  display: flex;
-}
-
-.fourth-section {
-  @extend .inner-container;
-}
-
-.head-content {
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-}
-
 .box {
-  padding: 5px;
+  position: relative;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   border: 5px solid $color-black;
+  flex-shrink: 0;
+  background: url('../images/pattern.png') center repeat;
+  background-size: 60px;
 }
 
 .line {
-  width: 50px;
-  height: 5px;
+  width: 100px;
+  height: 10px;
   background: $color-black;
+  margin-top: 60px;
+}
+
+.horizontal-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.horizontal-text {
+  margin-left: 30px;
+}
+
+.blue-background {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  width: 525px;
+  height: 348px;
+  background: #e9faff;
+}
+
+.background-image {
+  position: absolute;
+  bottom: -80%;
+  right: 0;
+  bottom: -560px;
+  right: -300px;
+  animation: rotate linear infinite 300s;
+}
+
+.triangle-background {
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  width: 300px;
+  height: 486px;
+  background: linear-gradient(
+    to bottom right,
+    $color-white 0%,
+    $color-white 50%,
+    #fef4fe 50%,
+    #fef4fe 100%
+  );
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

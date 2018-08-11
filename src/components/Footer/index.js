@@ -81,10 +81,18 @@ const Footer = () => (
         ipsum. Nunc dapibus tristique interdum. Fusce at purus magna.
       </p>
       <div className={styles.links}>
-        <a className={styles.link}>Terms & Conditions</a>
-        <a className={styles.link}>Disclosure Library</a>
-        <a className={styles.link}>Contact Us</a>
-        <a className={styles.link}>FAQ</a>
+        <a href="/" className={styles.link}>
+          Terms & Conditions
+        </a>
+        <a href="/" className={styles.link}>
+          Disclosure Library
+        </a>
+        <a href="/" className={styles.link}>
+          Contact Us
+        </a>
+        <a href="/" className={styles.link}>
+          FAQ
+        </a>
       </div>
       <p>© 2018 TokenDATA. All rights reserved.</p>
       <div className={styles.social}>
