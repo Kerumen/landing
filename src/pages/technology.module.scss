@@ -103,6 +103,27 @@
   }
 }
 
+.tag-rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 255px;
+  height: 60px;
+  color: $color-white;
+  background: $color-black;
+  border: 5px solid $color-black;
+  & + & {
+    margin-left: 15px;
+  }
+}
+
+.tag-rectangle-white {
+  @extend .tag-rectangle;
+
+  color: $color-black;
+  background: $color-white;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

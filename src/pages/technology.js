@@ -66,6 +66,19 @@ const APIDescription = ({ title, description }) => (
   </div>
 )
 
+const TagRectangle = ({ children, white, width }) => (
+  <div
+    className={white ? styles.tagRectangleWhite : styles.tagRectangle}
+    style={{ width }}
+  >
+    {!!children && (
+      <Title style={{ textTransform: 'uppercase', fontSize: 24 }}>
+        {children}
+      </Title>
+    )}
+  </div>
+)
+
 class TechnologyPage extends Component {
   render() {
     return (
@@ -233,6 +246,46 @@ class TechnologyPage extends Component {
               <img src={require('../images/techno/javascript.svg')} />
               <img src={require('../images/techno/xml.svg')} />
               <img src={require('../images/techno/r.svg')} />
+            </div>
+          </div>
+        </Section>
+        <Section row>
+          <div
+            style={{
+              border: '10px solid black',
+              display: 'flex',
+              alignItems: 'center',
+              height: 480,
+              padding: '0 30px',
+            }}
+          >
+            <TitleAndText
+              title="Our insights powered by AI"
+              text="To help our internal team of data scientists, we rely on the best data scientist of the world, through the recurrent organisation of prize competitions, to improve our indicators’ accuracy."
+            />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+                marginLeft: 45,
+              }}
+            >
+              <div style={{ marginBottom: 30, display: 'flex' }}>
+                <TagRectangle />
+              </div>
+              <div style={{ marginBottom: 30, display: 'flex' }}>
+                <TagRectangle white>Scam Rating</TagRectangle>
+                <TagRectangle width={120} />
+              </div>
+              <div style={{ marginBottom: 30, display: 'flex' }}>
+                <TagRectangle>Team Solidity</TagRectangle>
+                <TagRectangle>Technology</TagRectangle>
+              </div>
+              <div style={{ display: 'flex' }}>
+                <TagRectangle>Risk Index</TagRectangle>
+                <TagRectangle width={180} />
+              </div>
             </div>
           </div>
         </Section>
