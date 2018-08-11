@@ -19,14 +19,13 @@
 
 .timeline {
   width: 100%;
-  height: 260px;
   margin-top: 90px;
-  overflow: auto;
+  overflow-y: auto;
   position: relative;
 }
 
 .inner {
-  position: absolute;
+  position: relative;
   display: flex;
 }
 
@@ -38,6 +37,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-shrink: 0;
   &:not(:last-child) {
     margin-right: 182px;
   }

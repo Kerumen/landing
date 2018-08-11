@@ -30,7 +30,13 @@ class Timeline extends Component {
 
     return (
       <div className={styles.timeline}>
-        <div className={styles.inner} style={{ padding: `0px ${padding}px` }}>
+        <div
+          className={styles.inner}
+          style={{
+            padding: `0px ${padding}px`,
+            width: `${6 * (260 + 182) + padding * 2 - 182}px`,
+          }}
+        >
           <div className={styles.lines} />
           {[1, 2, 3, 4, 5, 6].map(index => (
             <div
