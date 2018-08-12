@@ -14,12 +14,20 @@
   }
 }
 
-.black-link {
+.black {
   @extend .link;
 
   color: $color-white;
   &:hover {
     color: $color-black;
+    background: $color-white;
+  }
+}
+
+.green {
+  @extend .link;
+
+  &:hover {
     background: $color-white;
   }
 }

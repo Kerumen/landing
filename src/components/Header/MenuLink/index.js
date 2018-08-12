@@ -3,11 +3,11 @@ import { Link } from 'gatsby'
 
 import styles from './styles.module.scss'
 
-const MenuLink = ({ children, to, black }) => (
+const MenuLink = ({ children, to, color }) => (
   <Link
     activeStyle={{ background: 'white' }}
     to={to}
-    className={black ? styles.blackLink : styles.link}
+    className={color ? styles[color] : styles.link}
   >
     {children}
   </Link>
