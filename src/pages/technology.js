@@ -256,12 +256,15 @@ class TechnologyPage extends Component {
               </div>
             </div>
             <div className={styles.technoContainer}>
-              <img src={require('../images/techno/excel.svg')} />
-              <img src={require('../images/techno/python.svg')} />
-              <img src={require('../images/techno/java.svg')} />
-              <img src={require('../images/techno/javascript.svg')} />
-              <img src={require('../images/techno/xml.svg')} />
-              <img src={require('../images/techno/r.svg')} />
+              <img src={require('../images/techno/excel.svg')} alt="excel" />
+              <img src={require('../images/techno/python.svg')} alt="python" />
+              <img src={require('../images/techno/java.svg')} alt="java" />
+              <img
+                src={require('../images/techno/javascript.svg')}
+                alt="javascript"
+              />
+              <img src={require('../images/techno/xml.svg')} alt="xml" />
+              <img src={require('../images/techno/r.svg')} alt="r" />
             </div>
           </div>
         </Section>
