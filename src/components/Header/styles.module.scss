@@ -8,6 +8,7 @@
   z-index: 10;
   background: transparent;
   color: $color-black;
+  height: 60px;
 }
 
 .white {
@@ -43,7 +44,9 @@
   max-width: $container-width;
   display: flex;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0px 15px;
+  align-items: center;
+  height: 100%;
 }
 
 .links {

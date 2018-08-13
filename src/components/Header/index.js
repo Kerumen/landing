@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
 import MenuLink from './MenuLink'
+import Dropdown from './Dropdown'
 
 import styles from './styles.module.scss'
 
@@ -26,9 +27,15 @@ class Header extends Component {
             <MenuLink to="/technology" color={color}>
               Technology
             </MenuLink>
-            <MenuLink to="/whitepaper" color={color}>
-              Whitepaper
-            </MenuLink>
+            <Dropdown
+              items={[
+                { name: 'Whitepaper' },
+                { name: 'Greypaper' },
+                { name: 'Business plan' },
+              ]}
+            >
+              Documents
+            </Dropdown>
             <MenuLink to="/team" color={color}>
               Team
             </MenuLink>
