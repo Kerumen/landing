@@ -81,23 +81,34 @@ const TagRectangle = ({ children, white, width }) => (
 )
 
 class TechnologyPage extends Component {
-  state = { green: false }
+  state = { color: undefined }
 
-  handleWaypointEnter = () => this.setState({ green: true })
+  onPositionChange = ({ currentPosition }) => {
+    if (currentPosition === 'above') {
+      this.setState({ color: 'white' })
+    }
+  }
 
-  handleWaypointLeave = () => this.setState({ green: false })
+  handleWaypointEnter = () => {
+    return this.setState({ color: 'green' })
+  }
+
+  handleWaypointLeave = () => {
+    return this.setState({ color: 'white' })
+  }
 
   render() {
-    const { green } = this.state
+    const { color } = this.state
 
     return (
-      <Layout color={green ? 'green' : null}>
+      <Layout color={color}>
         <Waypoint
+          onPositionChange={this.onPositionChange}
           onEnter={this.handleWaypointEnter}
           onLeave={this.handleWaypointLeave}
         >
           <div
-            style={{ height: 664, background: '#EBF4EC', overflow: 'hidden' }}
+            style={{ height: 720, background: '#EBF4EC', overflow: 'hidden' }}
           >
             <Section style={{ height: '100%', position: 'relative' }}>
               <TitleAndText

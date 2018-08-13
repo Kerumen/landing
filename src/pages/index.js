@@ -56,7 +56,7 @@ class IndexPage extends Component {
     const { black } = this.state
 
     return (
-      <Layout color={black ? 'black' : null}>
+      <Layout color={black ? 'black' : 'white'}>
         <Section row>
           <TitleAndText
             title="Unleash the power of the world’s crypto data"

@@ -6,20 +6,6 @@ import MenuLink from './MenuLink'
 import styles from './styles.module.scss'
 
 class Header extends Component {
-  // componentWillReceiveProps({ animated }) {
-  //   if (!this.header) return null
-  //   if (animated) {
-  //     this.header.style.transition = 'background ease 0.4s'
-  //   } else {
-  //     this.header.style.transition = 'none'
-  //   }
-  //   return null
-  // }
-
-  componentDidUpdate() {
-    console.log('frkof')
-  }
-
   render() {
     const { color } = this.props
 
