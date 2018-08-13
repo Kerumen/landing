@@ -10,11 +10,7 @@ class Header extends Component {
     const { color } = this.props
 
     return (
-      <div
-        ref={c => (this.header = c)}
-        className={color ? styles[color] : styles.header}
-        // style={animated ? { transition: 'background ease 0.4s' } : {}}
-      >
+      <div className={color ? styles[color] : styles.header}>
         <div className={styles.container}>
           <Link to="/" className={styles.logo}>
             <img

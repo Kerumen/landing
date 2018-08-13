@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 
 const MenuLink = ({ children, to, color }) => (
   <Link
-    activeStyle={{ background: 'white' }}
+    activeClassName={color ? styles[`${color}Active`] : styles.linkActive}
     to={to}
     className={color ? styles[color] : styles.link}
   >
