@@ -42,9 +42,20 @@ class Header extends Component {
             <MenuLink to="/blog" color={color}>
               Blog
             </MenuLink>
-            <MenuLink to="/social" color={color}>
+            <Dropdown
+              align="right"
+              width={125}
+              items={[
+                { name: 'LinkedIn' },
+                { name: 'Facebook' },
+                { name: 'Twitter' },
+                { name: 'Slack' },
+                { name: 'Telegram' },
+                { name: 'WeChat' },
+              ]}
+            >
               Social
-            </MenuLink>
+            </Dropdown>
           </div>
         </div>
       </div>
