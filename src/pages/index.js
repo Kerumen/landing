@@ -33,8 +33,9 @@ const SeeMore = () => <Button variation="orange">See more</Button>
 const BallVideo = ({ name }) => (
   <video
     loop
-    preload="auto"
+    muted
     autoPlay
+    preload="auto"
     onContextMenu={e => e.preventDefault()}
     width={600}
   >
