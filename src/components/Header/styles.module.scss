@@ -32,6 +32,13 @@
   transition: none;
 }
 
+.pink {
+  @extend .header;
+
+  background: #fef4fe;
+  transition: none;
+}
+
 .container {
   max-width: $container-width;
   display: flex;

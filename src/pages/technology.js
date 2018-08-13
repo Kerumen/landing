@@ -7,16 +7,12 @@ import Title from '../components/Title'
 import Image from '../components/Image'
 import TitleAndText from '../components/TitleAndText'
 import Button from '../components/Button'
+import Box from '../components/Box'
+import Line from '../components/Line'
 
 import styles from './technology.module.scss'
 
 const Subscribe = () => <Button>Subscribe</Button>
-
-const Box = ({ children, ...props }) => (
-  <div className={styles.box} {...props}>
-    {children}
-  </div>
-)
 
 const VerticalBox = ({ title, text }) => {
   return (
@@ -176,7 +172,7 @@ class TechnologyPage extends Component {
                 then conscientiously organizing and manipulating it is essential
                 for businesses today if they want to improve their efficiency.
               </p>
-              <div className={styles.line} />
+              <Line />
             </div>
           </div>
         </Section>

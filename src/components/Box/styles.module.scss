@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.box {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid $color-black;
+  flex-shrink: 0;
+  background: url('../../images/pattern.png') center repeat;
+  background-size: 60px;
+}

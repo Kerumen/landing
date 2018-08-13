@@ -39,3 +39,12 @@
     background: $color-white;
   }
 }
+
+.pink {
+  @extend .link;
+
+  &-active,
+  &:hover {
+    background: $color-white;
+  }
+}
