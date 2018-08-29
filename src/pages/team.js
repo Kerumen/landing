@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Waypoint from 'react-waypoint'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 import Image from '../components/Image'
 import Title from '../components/Title'
