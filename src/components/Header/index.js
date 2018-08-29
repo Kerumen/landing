@@ -28,6 +28,7 @@ class Header extends Component {
               Technology
             </MenuLink>
             <Dropdown
+              color={color}
               items={[
                 { name: 'Whitepaper' },
                 { name: 'Greypaper' },
@@ -43,6 +44,7 @@ class Header extends Component {
               Blog
             </MenuLink>
             <Dropdown
+              color={color}
               align="right"
               width={125}
               items={[

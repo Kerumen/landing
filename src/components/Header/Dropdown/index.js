@@ -2,11 +2,16 @@ import React from 'react'
 
 import styles from './styles.module.scss'
 
-const Dropdown = ({ children, items, align = 'left', width = 200 }) => (
+const Dropdown = ({ children, items, align = 'left', width = 200, color }) => (
   <div className={styles.container}>
-    <div className={styles.link}>{children}</div>
+    <div className={color ? styles[color] : styles.link}>{children}</div>
     <div className={styles.dropdown} style={{ [align]: 0 }}>
-      <div className={styles.dropdownInner} style={{ width }}>
+      <div
+        className={
+          color === 'black' ? styles.dropdownInnerBlack : styles.dropdownInner
+        }
+        style={{ width }}
+      >
         {items.map(({ name }) => (
           <div key={name} className={styles.subLink}>
             {name}
