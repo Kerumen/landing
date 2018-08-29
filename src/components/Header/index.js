@@ -18,7 +18,7 @@ class Header extends Component {
               src={
                 color === 'black'
                   ? require('../../images/logo-white.svg')
-                  : require('../../images/logo.svg')
+                  : require('../../images/logo-black.svg')
               }
               alt="logo"
             />
