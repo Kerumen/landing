@@ -64,7 +64,7 @@ class TeamPage extends Component {
               <div style={{ display: 'flex' }}>
                 <div className={styles.description}>
                   <p>
-                    BBorn in 2017 TokenData is the result of an in-depth
+                    Born in 2017 TokenData is the result of an in-depth
                     reflection and long-term work. Here’s our story.
                   </p>
                   <p>
