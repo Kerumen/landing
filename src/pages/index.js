@@ -111,11 +111,11 @@ class IndexPage extends Component {
               <div className={styles.whyBlocsRow}>
                 <WhyBloc
                   title="Loyalty Program"
-                  content="10% of the TDA tokens received from sales of services will be redistributed quarterly to the holders of TDA in proportion to their holdings in exchange of social selling service."
+                  content="A part of the TDA tokens received from sales of services will be redistributed quarterly to the holders of TDA in proportion to their holdings in exchange of social selling service."
                 />
                 <WhyBloc
                   title="Bonus Program"
-                  content="Each semester until the second anniversary of the ICO, a 5% bonus of the TDA Tokens held by each investor will be paid by Token Data, provided the investor has never transferred the Tokens to a different address than granted during the ICO."
+                  content="Each semester until the second anniversary of the ICO, a bonus of the TDA Tokens held by each investor will be paid by Token Data, provided the investor has never transferred the Tokens to a different address than granted during the ICO."
                 />
               </div>
               <div className={styles.centeredBloc} style={{ marginTop: 300 }}>

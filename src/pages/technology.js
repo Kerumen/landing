@@ -249,7 +249,7 @@ class TechnologyPage extends Component {
             />
             <APIDescription
               title="The Last API You’ll Ever Need"
-              description="Quandl abstracts away your need to handle multiple sources and ever-changing publication formats. Get your data via Tokendata, and don’t worry about fickle publishers ever again."
+              description="Token Data abstracts away your need to handle multiple sources and ever-changing publication formats. Get your data via Tokendata, and don’t worry about fickle publishers ever again."
             />
           </div>
           <div style={{ marginLeft: 60, position: 'relative' }}>
