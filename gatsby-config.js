@@ -2,7 +2,10 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: 'TokenDATA',
+    title: 'Token Data',
+    siteUrl: 'https://tokendata.ai/',
+    description:
+      'Token Data is the first platform which extract, collect and build an awesome datalake of the crypto-market to empower the decision maker.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
