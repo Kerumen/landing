@@ -24,8 +24,14 @@ class Header extends Component {
             />
           </Link>
           <div className={styles.links}>
+            <MenuLink to="/" color={color}>
+              Home
+            </MenuLink>
             <MenuLink to="/technology" color={color}>
               Technology
+            </MenuLink>
+            <MenuLink to="/team" color={color}>
+              About Us
             </MenuLink>
             <Dropdown
               color={color}
@@ -37,27 +43,27 @@ class Header extends Component {
             >
               Documents
             </Dropdown>
-            <MenuLink to="/team" color={color}>
-              Team
-            </MenuLink>
-            <MenuLink to="/blog" color={color}>
-              Blog
-            </MenuLink>
             <Dropdown
               color={color}
-              align="right"
               width={125}
               items={[
-                { name: 'LinkedIn' },
-                { name: 'Facebook' },
                 { name: 'Twitter' },
-                { name: 'Slack' },
+                {
+                  name: 'LinkedIn',
+                  href: 'https://www.linkedin.com/company/tokendata-ai/',
+                },
                 { name: 'Telegram' },
-                { name: 'WeChat' },
+                { name: 'Mail' },
+                { name: 'Facebook' },
+                { name: 'Medium' },
+                { name: 'Angel List', href: 'https://angel.co/tokendata/' },
               ]}
             >
               Social
             </Dropdown>
+            <MenuLink to="/beta" color={color}>
+              Beta
+            </MenuLink>
           </div>
         </div>
       </div>

@@ -12,10 +12,16 @@ const Dropdown = ({ children, items, align = 'left', width = 200, color }) => (
         }
         style={{ width }}
       >
-        {items.map(({ name }) => (
-          <div key={name} className={styles.subLink}>
+        {items.map(({ name, href = '#' }) => (
+          <a
+            key={name}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.subLink}
+          >
             {name}
-          </div>
+          </a>
         ))}
       </div>
     </div>
