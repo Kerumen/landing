@@ -124,7 +124,7 @@ class TeamPage extends Component {
             </Section>
           </div>
         </Waypoint>
-        <Section style={{ padding: '200px 30px' }}>
+        {/* <Section style={{ padding: '200px 30px' }}>
           <TitleAndText
             title="Our Team to the moon"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo. Donec quis imperdiet ligula."
@@ -225,7 +225,7 @@ class TeamPage extends Component {
               color="#FDEFE9"
             />
           </div>
-        </Section>
+        </Section> */}
       </Layout>
     )
   }
