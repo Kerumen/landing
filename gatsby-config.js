@@ -18,5 +18,11 @@ module.exports = {
         path: path.join(__dirname, 'config'),
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-114689148-1',
+      },
+    },
   ],
 }
