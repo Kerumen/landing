@@ -106,7 +106,7 @@ class TechnologyPage extends Component {
           <div
             style={{ height: 720, background: '#EBF4EC', overflow: 'hidden' }}
           >
-            <Section style={{ height: '100%', position: 'relative' }}>
+            <Section style={{ minHeight: '100%', position: 'relative' }}>
               <TitleAndText
                 title="We are the central nervous system of global crypto asset management"
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis

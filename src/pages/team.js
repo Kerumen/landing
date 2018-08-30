@@ -59,7 +59,7 @@ class TeamPage extends Component {
           onLeave={this.handleWaypointLeave}
         >
           <div style={{ height: 1010, background: '#FEF4FE' }}>
-            <Section style={{ height: '100%', alignItems: 'center' }}>
+            <Section style={{ minHeight: '100%', alignItems: 'center' }}>
               <Title style={{ marginBottom: 60 }}>About us</Title>
               <div style={{ display: 'flex' }}>
                 <div className={styles.description}>
