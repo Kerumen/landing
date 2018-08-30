@@ -6,7 +6,7 @@ const Footer = () => (
   <div className={styles.footer}>
     <div className={styles.socials}>
       <a
-        href="#"
+        href="https://twitter.com/tokendataai/"
         className={styles.socialLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const Footer = () => (
         <img alt="linkedin" src={require('../../images/social/linkedin.svg')} />
       </a>
       <a
-        href="#"
+        href="https://t.me/joinchat/AAAAAEnpmczvxh-EC90FtQ/"
         className={styles.socialLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -30,7 +30,7 @@ const Footer = () => (
         <img alt="telegram" src={require('../../images/social/telegram.svg')} />
       </a>
       <a
-        href="#"
+        href="mailto:hello@tokendata.ai"
         className={styles.socialLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Footer = () => (
         <img alt="mail" src={require('../../images/social/mail.svg')} />
       </a>
       <a
-        href="#"
+        href="https://www.facebook.com/TokenData-1884067325220498/"
         className={styles.socialLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const Footer = () => (
         <img alt="facebook" src={require('../../images/social/facebook.svg')} />
       </a>
       <a
-        href="#"
+        href="https://medium.com/@tokendataICO/"
         className={styles.socialLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -60,6 +60,22 @@ const Footer = () => (
         rel="noopener noreferrer"
       >
         <img alt="angel" src={require('../../images/social/angel.svg')} />
+      </a>
+      <a
+        href="https://discordapp.com/channels/484700860094349312/"
+        className={styles.socialLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img alt="discord" src={require('../../images/social/discord.svg')} />
+      </a>
+      <a
+        href="https://www.reddit.com/user/tokendataico/"
+        className={styles.socialLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img alt="reddit" src={require('../../images/social/reddit.svg')} />
       </a>
     </div>
     <div className={styles.columns}>

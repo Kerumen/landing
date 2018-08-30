@@ -47,16 +47,30 @@ class Header extends Component {
               color={color}
               width={125}
               items={[
-                { name: 'Twitter' },
+                { name: 'Twitter', href: 'https://twitter.com/tokendataai/' },
                 {
                   name: 'LinkedIn',
                   href: 'https://www.linkedin.com/company/tokendata-ai/',
                 },
-                { name: 'Telegram' },
-                { name: 'Mail' },
-                { name: 'Facebook' },
-                { name: 'Medium' },
+                {
+                  name: 'Telegram',
+                  href: 'https://t.me/joinchat/AAAAAEnpmczvxh-EC90FtQ/',
+                },
+                { name: 'Mail', href: 'mailto:hello@tokendata.ai' },
+                {
+                  name: 'Facebook',
+                  href: 'https://www.facebook.com/TokenData-1884067325220498/',
+                },
+                { name: 'Medium', href: 'https://medium.com/@tokendataICO/' },
                 { name: 'Angel List', href: 'https://angel.co/tokendata/' },
+                {
+                  name: 'Discord',
+                  href: 'https://discordapp.com/channels/484700860094349312/',
+                },
+                {
+                  name: 'Reddit',
+                  href: 'https://www.reddit.com/user/tokendataico/',
+                },
               ]}
             >
               Social
