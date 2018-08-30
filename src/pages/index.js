@@ -118,7 +118,7 @@ class IndexPage extends Component {
                   content="Each semester until the second anniversary of the ICO, a bonus of the TDA Tokens held by each investor will be paid by Token Data, provided the investor has never transferred the Tokens to a different address than granted during the ICO."
                 />
               </div>
-              <div className={styles.centeredBloc} style={{ marginTop: 300 }}>
+              {/* <div className={styles.centeredBloc} style={{ marginTop: 300 }}>
                 <Title style={{ marginBottom: 30 }}>TDA Token & ICO</Title>
                 <div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -126,7 +126,7 @@ class IndexPage extends Component {
                   sit amet rhoncus justo. Donec quis imperdiet ligula.
                 </div>
               </div>
-              <ICOProgress />
+              <ICOProgress /> */}
             </div>
           </section>
         </Waypoint>
