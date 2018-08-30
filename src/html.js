@@ -6,6 +6,11 @@ export default class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
         <head>
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href={require('./favicon.ico')}
+          />
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
