@@ -61,9 +61,7 @@ class IndexPage extends Component {
         <Section row>
           <TitleAndText
             title="Unleash the power of the world’s crypto data"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
-      eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
-      Donec quis imperdiet ligula."
+            text="TokenData is the first platform which extract, collect and build an awesome datalake of the crypto-market to empower the decision maker."
             renderExtra={WhitelistButton}
             withRectangle
             style={{ position: 'relative', marginLeft: 30 }}
@@ -74,9 +72,7 @@ class IndexPage extends Component {
           <BallVideo name="yellow" />
           <TitleAndText
             title="Technology at it’s best to serve business intelligence"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
-      eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
-      Donec quis imperdiet ligula."
+            text="TokenData is a ground-breaking innovator in the creation of alternative data which are the ultimate source of power."
             renderExtra={SeeMore}
           />
         </Section>
@@ -137,10 +133,8 @@ class IndexPage extends Component {
         <Section container={false} style={{ alignItems: 'flex-start' }}>
           <div className={styles.innerContainer}>
             <TitleAndText
-              title="Unleash the power of the world’s crypto data"
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
-      eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
-      Donec quis imperdiet ligula."
+              title="A global information and technology company"
+              text="We use our dynamic network of data, ideas and analysis to solve difficult problems every day."
               style={{ marginLeft: 30 }}
             />
           </div>

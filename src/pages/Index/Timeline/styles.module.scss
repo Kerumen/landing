@@ -50,6 +50,8 @@
 }
 
 .quarter-line {
+  position: absolute;
+  top: 85px;
   height: 60px;
   width: 5px;
   background: $color-black;
@@ -58,8 +60,21 @@
 .quarter-content {
   margin: 0;
   padding: 0;
-  list-style: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 14px;
   text-transform: uppercase;
+  list-style: none;
+  padding-left: 1em;
+  > li {
+    &:before {
+      display: inline-block;
+      content: '-';
+      width: 1em;
+      margin-left: -1em;
+    }
+    & {
+      margin-top: 3px;
+    }
+  }
 }

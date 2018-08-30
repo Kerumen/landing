@@ -63,49 +63,61 @@ class TeamPage extends Component {
               <Title style={{ marginBottom: 60 }}>About us</Title>
               <div style={{ display: 'flex' }}>
                 <div className={styles.description}>
-                  Born in 2017 tokendata est issu d’une réflexion et d’un
-                  travail au long cours. Voici notre histoire :<br />
-                  When in 2015 we started to hear about the Consensys project
-                  https://thebkp.com/, it was like everything we knew collapsed.
-                  We then dig into the blockchain world and we felt like a new
-                  world was opening its doors to us.
-                  <br />
-                  Then we discovered the Ethereum project, and started to follow
-                  and support all the extraordinary projects it launched in
-                  2016. The rocket was launched, and more and more projects
-                  started to finance themselves through the ICO, we therefore
-                  have to, unable to support all new projects, start collecting
-                  data on them to evaluate them to support the most promising.
-                  It was at this point that we realized that the traditional
-                  methods of analysis that we used to use do not apply here. For
-                  two reasons: 1) Ecosystem stakeholders are very different from
-                  traditional investment circles and therefore different
-                  decision-making behaviors 2) The data available to us was not
-                  sufficient for the application of the models financial and
-                  econometric analyzes that we knew.
+                  <p>
+                    BBorn in 2017 TokenData is the result of an in-depth
+                    reflection and long-term work. Here’s our story.
+                  </p>
+                  <p>
+                    {' '}
+                    When in 2015 we started to hear about the Consensys project
+                    - https://thebkp.com - it was like everything we knew
+                    collapsed. We then dig into the Blockchain subject and we
+                    felt like a new world was opening its doors to us.
+                  </p>
+                  <p>
+                    We also discovered the Ethereum project, and started to
+                    follow and support all the extraordinary programs that
+                    happened in 2016. The rocket was launched, and more and more
+                    companies started to finance themselves through ICOs. We
+                    therefore had to - due to the impossibility to support all
+                    new promising projects - start collecting data in the aim of
+                    evaluation. At this point, we realized that the traditional
+                    methods of analysis we used to know do not apply here. For
+                    two reasons: 1) Ecosystem stakeholders are very different
+                    from traditional investment circles and thus from
+                    decision-making behaviors. 2) The data available was not
+                    sufficient for the application of financial models and
+                    econometric analysis acknowledged.
+                  </p>
                 </div>
                 <div className={styles.description}>
-                  It was then that we started to focus on Big Data methodologies
-                  and more specifically on Machine Learning. Since 2016, we
-                  collect millions of data on the Blockchain sector, and use the
-                  most advanced machine learning techniques to try to create
-                  alpha sources of alternative and derived data.
-                  <br />
-                  The year 2017 saw an explosion in the number of companies
-                  funded through ICOs, and many of them turned out to be Scam.
-                  While our tools allowed us to detect them relatively early, we
-                  realized that many contributors had been tempted by
-                  investments in projects that would never see the light of day.
-                  This type of behavior, if it lasts for too long and attracts
-                  too many fraudsters, can lead to an anti-selection phenomenon
-                  on the market and discourage contributors who wish to support
-                  the best ICOs.
-                  <br />
-                  That's why since the beginning of 2017 we have been working on
-                  the development of a platform to spread our work to as many
-                  people as possible, by offering reliable and complete datasets
-                  as well as by creating and improving new indicators to allow
-                  the eco-system of the blockchain to grow even faster.
+                  <p>
+                    We started to focus on Big Data methodologies and more
+                    specifically on artificial intelligence. Since 2017, we are
+                    collecting millions of data on the Blockchain sector. For
+                    this purpose, we are using the most advanced machine
+                    learning technologies and try to create alpha sources of
+                    alternative and derived data.
+                  </p>
+                  <p>
+                    These past years saw an explosion in the number of companies
+                    funded through ICOs, and many of them turned out to be
+                    scams. While our tools allowed us to detect them relatively
+                    early, we realized that many contributors had been tempted
+                    by investments in projects that would never see the light of
+                    day. This type of behavior, if it lasts for too long and
+                    attracts too many fraudsters, can lead to an anti-selection
+                    phenomenon on the market and discourage contributors who
+                    wish to support the best ICOs.
+                  </p>
+                  <p>
+                    That's why since the beginning of 2017 we have been working
+                    on the development of a platform to spread our work to as
+                    many people as possible, by offering reliable and complete
+                    datasets as well as by creating and improving new indicators
+                    to allow the eco-system of the Blockchain to grow even
+                    faster.
+                  </p>
                   <Line />
                 </div>
               </div>

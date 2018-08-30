@@ -4,6 +4,50 @@ import Title from '../../../components/Title'
 
 import styles from './styles.module.scss'
 
+const steps = [
+  {
+    past: true,
+    when: 'S2 2017',
+    what: ['Idea', 'First Data Set collected', 'First econometric analysis'],
+  },
+  {
+    past: true,
+    when: 'S1 2018',
+    what: [
+      'First Trade Data collected',
+      'First Core ICO Data collected',
+      'Data management processing',
+    ],
+  },
+  {
+    past: false,
+    when: 'S2 2018',
+    what: [
+      'Design GUI Interface',
+      'Redesign Cloud Architecture',
+      'Team sourcing expansion',
+    ],
+  },
+  {
+    past: false,
+    when: 'S1 2019',
+    what: [
+      'AI index improvement',
+      'Alternative Data Set integration for AI modeling',
+      'International expansion',
+    ],
+  },
+  {
+    past: false,
+    when: 'S2 2019',
+    what: [
+      'Order management Interface',
+      'Valuation Index supervised and unsupervised method',
+      'Unvaluation index',
+    ],
+  },
+]
+
 class Timeline extends Component {
   state = { width: 0, height: 0 }
 
@@ -34,26 +78,22 @@ class Timeline extends Component {
           className={styles.inner}
           style={{
             padding: `0px ${padding}px`,
-            width: `${6 * (260 + 182) + padding * 2 - 182}px`,
+            width: `${steps.length * (260 + 182) + padding * 2 - 182}px`,
           }}
         >
           <div className={styles.lines} />
-          {[1, 2, 3, 4, 5, 6].map(index => (
+          {steps.map(({ when, what, past }) => (
             <div
-              key={index}
-              className={
-                index < 4 ? styles.quarterBox : styles.quarterBoxFuture
-              }
+              key={when}
+              className={past ? styles.quarterBox : styles.quarterBoxFuture}
             >
-              <Title style={{ fontSize: 24, lineHeight: 1 }}>Q3 2017</Title>
+              <Title style={{ fontSize: 24, lineHeight: 1 }}>{when}</Title>
               <div className={styles.quarterLine} />
-              <div>
-                <ul className={styles.quarterContent}>
-                  <li>- Design creation</li>
-                  <li>- Architectural</li>
-                  <li>- Business advantages</li>
-                </ul>
-              </div>
+              <ul className={styles.quarterContent}>
+                {what.map(w => (
+                  <li key={w}>{w}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

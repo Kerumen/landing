@@ -109,9 +109,7 @@ class TechnologyPage extends Component {
             <Section style={{ minHeight: '100%', position: 'relative' }}>
               <TitleAndText
                 title="We are the central nervous system of global crypto asset management"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
-      eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
-      Donec quis imperdiet ligula."
+                text="Connecting decision makers to a dynamic network of information, people and ideas, TokenData quickly and accurately delivers business and financial information, news and insight around the world."
                 renderExtra={Subscribe}
                 style={{ marginLeft: 30 }}
               />
@@ -135,15 +133,13 @@ class TechnologyPage extends Component {
           </div>
           <TitleAndText
             title="An immeasurable source of data lies in our platform"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis
-      eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo.
-      Donec quis imperdiet ligula."
+            text="The first provider for economics, financial, and alternative datasets for crypto asset managers and investment professionals / institutionals. Our platform aims to serve the entire financial network."
             style={{ marginLeft: 45 }}
           />
         </Section>
         <Section row>
           <div style={{ display: 'flex' }}>
-            <Title>Why do we need data</Title>
+            <Title>Why do you need data</Title>
             <div style={{ width: 780, marginLeft: 30 }}>
               <p>
                 At Token Data, we will use Big Data to collect and produce
@@ -156,12 +152,12 @@ class TechnologyPage extends Component {
                 To achieve the best performance, the data chain value must be
                 fed with high quality data. These data, if robust and deep, have
                 a significant impact on the effectiveness of investments.
-                Several factors are at the root of a misuse of data: - high
-                quality data is difficult to acquire, comes from different
-                sources and is not aggregated - the delivery frequency of these
-                data varies from one source to another, which implies
-                significant processing costs of sending data to models when they
-                need it
+                Several factors are at the root of a misuse of data:
+                <br />- high quality data is difficult to acquire, comes from
+                different sources and is not aggregated
+                <br />- the delivery frequency of these data varies from one
+                source to another, which implies significant processing costs of
+                sending data to models when they need it
                 <br />- Data is provided in a variety of formats, making formal
                 transparency mandatory for efficient organization
                 <br />- Data storage can complicate their reading and readiness
@@ -192,9 +188,9 @@ class TechnologyPage extends Component {
                 models, in order for our users to get unfair advantages toward
                 their concurrents.
                 <br />
-                Examples : scam index that determines if an ICO project is going
+                Examples: scam index that determines if an ICO project is going
                 to be a fraud, risk index to evaluates the speculative risk
-                associated with a token…
+                associated with a token...
               </p>
             </div>
             <div className={styles.horizontalContainer}>
@@ -202,13 +198,17 @@ class TechnologyPage extends Component {
               <p className={styles.horizontalText}>
                 Essential financial and economic data, from the PNL to the team
                 conducting the project. We get those data by vectorizing the
-                whitepapers in order to transform them into exploitable
+                White Papers in order to transform them into exploitable
                 measures. The datasets into this category help analyse the
                 company on its fundamentals and are essential to understand what
                 are its taking and ending. Core data are the principal source of
                 information when deciding if a project is viable and if it will
                 reach its goals. We daily collect more than 2M data to enrich
                 our Data Lake.
+                <br />
+                Examples: middle term sales objectives, localisation of the
+                company, sector of activity, number of resources in the tech
+                department...
               </p>
             </div>
             <div className={styles.horizontalContainer}>
@@ -222,7 +222,11 @@ class TechnologyPage extends Component {
                 We’ll soon provide users with a single platform that uses
                 quantitative data models and analytic-driven selection to route
                 orders to a suite of destinations, empowering traders to
-                optimize execution
+                optimize execution.
+                <br />
+                Examples: BTC/ETH prices on 5 mins time range over the 10
+                biggest exchanges, Simple Floating Averages at 10, 30 and 50
+                days, Commodity Channel Index...
               </p>
             </div>
           </div>
