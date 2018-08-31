@@ -226,6 +226,71 @@ class TeamPage extends Component {
             />
           </div>
         </Section> */}
+        <Section style={{ padding: '200px 30px', alignItems: 'center' }}>
+          <Title style={{ marginBottom: 100 }}>Our partners</Title>
+          <div className={styles.partners}>
+            <div className={styles.partner}>
+              <div className={styles.partnerImage}>
+                <Image name="cfm" type="partners" retina={false} />
+              </div>
+              <div>
+                As a pioneer alternative investment fund, they help us
+                understand the needs of ours users to offer them the best
+                products and services
+              </div>
+            </div>
+            <div className={styles.partner}>
+              <div className={styles.partnerImage}>
+                <Image name="astek" type="partners" retina={false} />
+              </div>
+              <div>
+                Specialized in engineering and consulting in new technologies,
+                they work with us on connecting blockchain & artificial
+                intelligence into our product
+              </div>
+            </div>
+            <div className={styles.partner}>
+              <div className={styles.partnerImage}>
+                <Image name="dauphine" type="partners" retina={false} />
+              </div>
+              <div>
+                The best French finance university is engaged with us on
+                producing decision models and scientific articles to remain at
+                the forefront of innovations and actively participate in
+                research on these topics.
+              </div>
+            </div>
+          </div>
+          <div className={styles.partners}>
+            <div className={styles.partner}>
+              <div className={styles.partnerImage}>
+                <Image name="cnrs" type="partners" retina={false} />
+              </div>
+              The French public scientific laboratory helps us working on the
+              most accurate algorithms in order to always improve the accuracy
+              of our indexes.
+            </div>
+            <div className={styles.partner}>
+              <div className={styles.partnerImage}>
+                <Image name="vermeille" type="partners" retina={false} />
+              </div>
+              <div>
+                Sophie Vermeille and her associates work with us on defining and
+                structuring tomorrow’s European blockchain ecosystem
+              </div>
+            </div>
+            <div className={styles.partner}>
+              <div className={styles.partnerImage}>
+                <Image name="mce" type="partners" retina={false} />
+              </div>
+              <div>
+                MCE legal allowed us to structured our ICO according to FINMA’s
+                requirement in order for TokenData to be a reference in the
+                sector.
+              </div>
+            </div>
+          </div>
+        </Section>
       </Layout>
     )
   }

@@ -34,3 +34,31 @@
     margin-top: 75px;
   }
 }
+
+.partners {
+  display: flex;
+  & + & {
+    margin-top: 80px;
+  }
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.partner-image {
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  > img {
+    width: 150px;
+  }
+  margin-bottom: 30px;
+}

@@ -1,11 +1,26 @@
 import React from 'react'
 
-const Image = ({ name, type = null, extension = '.png', ...props }) => {
+const Image = ({
+  name,
+  type = null,
+  extension = '.png',
+  retina = true,
+  ...props
+}) => {
   const typePath = type ? `${type}/` : ''
-  const src = require(`../../images/${typePath}${name}${extension}`)
-  const variant2x = require(`../../images/${typePath}${name}@2x${extension}`)
 
-  return <img src={src} srcSet={`${variant2x} 2x`} alt={name} {...props} />
+  return (
+    <img
+      src={require(`../../images/${typePath}${name}${extension}`)}
+      alt={name}
+      {...(retina
+        ? {
+            srcSet: `${require(`../../images/${typePath}${name}@2x${extension}`)} 2x`,
+          }
+        : null)}
+      {...props}
+    />
+  )
 }
 
 export default Image
