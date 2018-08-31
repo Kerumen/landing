@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 
 import styles from './styles.module.scss'
 
@@ -10,20 +11,12 @@ const Section = ({
   ...props
 }) => (
   <section
-    className={container ? styles.sectionContainer : styles.section}
-    style={{
-      ...(row
-        ? {
-            flexDirection: 'row',
-            alignItems: 'center',
-          }
-        : {
-            flexDirection: 'column',
-            justifyContent: 'center',
-          }),
-
-      ...style,
-    }}
+    className={cx(
+      styles.section,
+      { [styles.sectionContainer]: container },
+      row ? styles.row : styles.column
+    )}
+    style={style}
     {...props}
   >
     {children}

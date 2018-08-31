@@ -17,18 +17,14 @@ import styles from './index.module.scss'
 
 const WhitelistButton = () => {
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
+    <div className={styles.whitelistButtonContainer}>
       <Button
         href="https://tokendata.typeform.com/to/eUeyVn/"
-        style={{ width: 225, marginRight: 30 }}
+        style={{ width: 225 }}
       >
         Get whitelisted
       </Button>
-      <div
-        style={{ fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}
-      >
-        TDA ICO to be announced
-      </div>
+      <div className={styles.whitelistButtonIco}>TDA ICO to be announced</div>
     </div>
   )
 }
@@ -47,6 +43,7 @@ const BallVideo = ({ name }) => (
     preload="auto"
     onContextMenu={e => e.preventDefault()}
     width={600}
+    className={styles.ballVideo}
   >
     <source src={require(`../videos/${name}.webm`)} type="video/webm" />
     <source src={require(`../videos/${name}.mp4`)} type="video/mp4" />
@@ -73,7 +70,7 @@ class IndexPage extends Component {
             text="TokenData is the first platform which extract, collect and build an awesome datalake of the crypto-market to empower the decision maker."
             renderExtra={WhitelistButton}
             withRectangle
-            style={{ position: 'relative', marginLeft: 30 }}
+            className={styles.firstTitle}
           />
           <BallVideo name="purple" />
         </Section>
@@ -107,25 +104,27 @@ class IndexPage extends Component {
                 </div>
               </div>
               <Image name="tornado" className={styles.backgroundImage} />
-              <div className={styles.whyBlocsRow}>
-                <WhyBloc
-                  title="Utility Program"
-                  content="The TDA token is used to access the platform’s services. Token Data is committed to applying a real time exchange rate available on a reference market."
-                />
-                <WhyBloc
-                  title="Top Holder Program"
-                  content="We provide the largest holders of TDA Tokens with unlimited access to a range of the data lake."
-                />
-              </div>
-              <div className={styles.whyBlocsRow}>
-                <WhyBloc
-                  title="Loyalty Program"
-                  content="A part of the TDA tokens received from sales of services will be redistributed quarterly to the holders of TDA in proportion to their holdings in exchange of social selling service."
-                />
-                <WhyBloc
-                  title="Bonus Program"
-                  content="Each semester until the second anniversary of the ICO, a bonus of the TDA Tokens held by each investor will be paid by Token Data, provided the investor has never transferred the Tokens to a different address than granted during the ICO."
-                />
+              <div>
+                <div className={styles.whyBlocsRow}>
+                  <WhyBloc
+                    title="Utility Program"
+                    content="The TDA token is used to access the platform’s services. Token Data is committed to applying a real time exchange rate available on a reference market."
+                  />
+                  <WhyBloc
+                    title="Top Holder Program"
+                    content="We provide the largest holders of TDA Tokens with unlimited access to a range of the data lake."
+                  />
+                </div>
+                <div className={styles.whyBlocsRow}>
+                  <WhyBloc
+                    title="Loyalty Program"
+                    content="A part of the TDA tokens received from sales of services will be redistributed quarterly to the holders of TDA in proportion to their holdings in exchange of social selling service."
+                  />
+                  <WhyBloc
+                    title="Bonus Program"
+                    content="Each semester until the second anniversary of the ICO, a bonus of the TDA Tokens held by each investor will be paid by Token Data, provided the investor has never transferred the Tokens to a different address than granted during the ICO."
+                  />
+                </div>
               </div>
               {/* <div className={styles.centeredBloc} style={{ marginTop: 300 }}>
                 <Title style={{ marginBottom: 30 }}>TDA Token & ICO</Title>

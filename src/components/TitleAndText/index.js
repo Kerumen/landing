@@ -1,4 +1,5 @@
 import React from 'react'
+import cx from 'classnames'
 
 import Title from '../Title'
 
@@ -9,9 +10,10 @@ const TitleAndText = ({
   text,
   withRectangle,
   renderExtra,
+  className,
   ...props
 }) => (
-  <div className={styles.container} {...props}>
+  <div className={cx(styles.container, className)} {...props}>
     {withRectangle && <div className={styles.rectangle} />}
     <Title style={{ marginBottom: 15, position: 'relative', zIndex: 1 }}>
       {title}
