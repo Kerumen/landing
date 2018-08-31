@@ -33,7 +33,10 @@ class Header extends Component {
             <MenuLink to="/team" color={color}>
               About Us
             </MenuLink>
-            <Dropdown color={color} items={[{ name: 'Whitepaper' }]}>
+            <Dropdown
+              color={color}
+              items={[{ name: 'Whitepaper', href: 'http://bit.ly/2NBty4I/' }]}
+            >
               Documents
             </Dropdown>
             <Dropdown
