@@ -195,7 +195,7 @@ const Footer = () => (
         </p>
         <div className={styles.links}>
           <a
-            href="http://bit.ly/2NBty4I"
+            href="http://bit.ly/2MFjj2F"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
