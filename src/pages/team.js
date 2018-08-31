@@ -225,7 +225,7 @@ class TeamPage extends Component {
               color="#FDEFE9"
             />
           </div>
-        </Section> */}
+        </Section>
         <Section style={{ padding: '200px 30px', alignItems: 'center' }}>
           <Title style={{ marginBottom: 100 }}>Our partners</Title>
           <div className={styles.partners}>
@@ -290,7 +290,7 @@ class TeamPage extends Component {
               </div>
             </div>
           </div>
-        </Section>
+        </Section> */}
       </Layout>
     )
   }
