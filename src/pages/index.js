@@ -149,12 +149,12 @@ class IndexPage extends Component {
           </div>
           <Timeline />
         </Section>
-        <Section>
+        {/* <Section>
           <Title style={{ textTransform: 'uppercase', textAlign: 'center' }}>
             Support & Recognition
           </Title>
           <Sponsors />
-        </Section>
+        </Section> */}
       </Layout>
     )
   }
