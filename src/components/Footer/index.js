@@ -194,16 +194,23 @@ const Footer = () => (
           THE WEBSITE.
         </p>
         <div className={styles.links}>
-          <a href="/" className={styles.link}>
+          <a
+            href="http://bit.ly/2NBty4I"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
             Terms & Conditions
           </a>
-          <a href="/" className={styles.link}>
-            Disclosure Library
-          </a>
-          <a href="/" className={styles.link}>
+          <a href="mailto:hello@tokendata.ai" className={styles.link}>
             Contact Us
           </a>
-          <a href="/" className={styles.link}>
+          <a
+            href="https://medium.com/@tokendataICO/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
             FAQ
           </a>
         </div>
