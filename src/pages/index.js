@@ -18,9 +18,14 @@ import styles from './index.module.scss'
 const WhitelistButton = () => {
   return (
     <div style={{ display: 'flex', alignItems: 'center' }}>
-      <Button style={{ width: 225, marginRight: 30 }}>Get whitelisted</Button>
+      <Button
+        href="https://tokendata.typeform.com/to/eUeyVn/"
+        style={{ width: 225, marginRight: 30 }}
+      >
+        Get whitelisted
+      </Button>
       <div
-        style={{ fontWeight: 'bold', fontSize: 14, textTransform: 'uppercase' }}
+        style={{ fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}
       >
         TDA ICO to be announced
       </div>
@@ -28,7 +33,11 @@ const WhitelistButton = () => {
   )
 }
 
-const SeeMore = () => <Button variation="orange">See more</Button>
+const SeeMore = () => (
+  <Button variation="orange" to="/technology">
+    See more
+  </Button>
+)
 
 const BallVideo = ({ name }) => (
   <video

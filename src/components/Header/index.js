@@ -68,7 +68,10 @@ class Header extends Component {
             >
               Social
             </Dropdown>
-            <MenuLink to="/beta" color={color}>
+            <MenuLink
+              href="https://tokendata.typeform.com/to/eUeyVn/"
+              color={color}
+            >
               Beta
             </MenuLink>
           </div>

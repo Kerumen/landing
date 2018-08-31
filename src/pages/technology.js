@@ -12,7 +12,9 @@ import Line from '../components/Line'
 
 import styles from './technology.module.scss'
 
-const Subscribe = () => <Button>Subscribe</Button>
+const Subscribe = () => (
+  <Button href="https://tokendata.typeform.com/to/eUeyVn/">Subscribe</Button>
+)
 
 const VerticalBox = ({ title, text }) => {
   return (
