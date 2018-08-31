@@ -35,7 +35,7 @@ class Header extends Component {
             </MenuLink>
             <Dropdown
               color={color}
-              items={[{ name: 'Whitepaper', href: 'http://bit.ly/2NBty4I/' }]}
+              items={[{ name: 'Whitepaper', href: 'http://bit.ly/2NBty4I' }]}
             >
               Documents
             </Dropdown>
