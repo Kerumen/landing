@@ -195,7 +195,7 @@ const Footer = () => (
         </p>
         <div className={styles.links}>
           <a
-            href="http://bit.ly/2MFjj2F"
+            href="https://storage.googleapis.com/tokendata/WhitePaperTokenData_31%20aout%202018_English%201.6.27.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
