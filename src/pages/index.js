@@ -30,8 +30,11 @@ const WhitelistButton = () => {
 }
 
 const SeeMore = () => (
-  <Button variation="orange" to="/technology">
-    See more
+  <Button
+    variation="orange"
+    href="https://storage.googleapis.com/tokendata/WhitePaperTokenData_31%20aout%202018_English%201.6.27.pdf"
+  >
+    White Paper
   </Button>
 )
 
