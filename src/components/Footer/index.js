@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import styles from './styles.module.scss'
 
@@ -194,14 +195,9 @@ const Footer = () => (
           THE WEBSITE.
         </p>
         <div className={styles.links}>
-          <a
-            href="https://storage.googleapis.com/tokendata/WhitePaperTokenData_31%20aout%202018_English%201.6.27.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.link}
-          >
+          <Link to="/whitepaper" className={styles.link}>
             Terms & Conditions
-          </a>
+          </Link>
           <a href="mailto:hello@tokendata.ai" className={styles.link}>
             Contact Us
           </a>
