@@ -81,6 +81,10 @@
     width: 18px;
     height: 18px;
   }
+
+  @media (min-width: $breakpoint-sm + 1) {
+    display: none;
+  }
 }
 
 .mobile-menu {
