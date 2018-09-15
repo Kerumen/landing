@@ -120,9 +120,7 @@ class TechnologyPage extends Component {
           </div>
         </Waypoint>
         <Section row>
-          <div
-            style={{ position: 'relative', display: 'flex', paddingLeft: 15 }}
-          >
+          <div className={styles.verticalBoxes}>
             <div className={styles.blueBackground} />
             <VerticalBox
               title="Core"
@@ -136,13 +134,12 @@ class TechnologyPage extends Component {
           <TitleAndText
             title="An immeasurable source of data lies in our platform"
             text="The first provider for economics, financial, and alternative datasets for crypto asset managers and investment professionals / institutionals. Our platform aims to serve the entire financial network."
-            style={{ marginLeft: 45 }}
           />
         </Section>
         <Section row>
-          <div style={{ display: 'flex' }}>
+          <div className={styles.dataContainer}>
             <Title>Why do you need data</Title>
-            <div style={{ width: 780, marginLeft: 30 }}>
+            <div className={styles.dataTexts}>
               <p>
                 At Token Data, we will use Big Data to collect and produce
                 datasets pertaining to the blockchain economy which can be
@@ -234,50 +231,55 @@ class TechnologyPage extends Component {
           </div>
         </Section>
         <Section row>
-          <div>
-            <Title>Millions of datasets, One API</Title>
-            <APIDescription
-              title="All The Data You Want"
-              description="Tokendata brings together over 20 million financial and economic
+          <div className={styles.apiContainer}>
+            <div>
+              <Title>Millions of datasets, One API</Title>
+              <APIDescription
+                title="All The Data You Want"
+                description="Tokendata brings together over 20 million financial and economic
                 datasets from over 500 sources on one easy-to-use platform."
-            />
-            <APIDescription
-              title="One Single Interface"
-              description="All datasets on Tokendata are available via the same API, irrespective of who originally published the data or in what format."
-            />
-            <APIDescription
-              title="New Data Added Weekly"
-              description="New datasets are added to Tokendata every week. Need some data we don’t have yet? Email us and we can add it for you."
-            />
-            <APIDescription
-              title="The Last API You’ll Ever Need"
-              description="Token Data abstracts away your need to handle multiple sources and ever-changing publication formats. Get your data via Tokendata, and don’t worry about fickle publishers ever again."
-            />
-          </div>
-          <div style={{ marginLeft: 60, position: 'relative' }}>
-            <div className={styles.terminalWindow}>
-              <div className={styles.terminalWindowCircle} />
-              <div className={styles.terminalWindowCircle} />
-              <div className={styles.terminalWindowCircle} />
-
-              <div className={styles.terminal}>
-                <div>$ curl https://tokendata.ai/v1/datasets \</div>
-                <div>-u sk_test_BQokikJOvBiI2HlWgH4olfQ2: \</div>
-                <div>-d source=tok_1Cr8602eZvKYlo2C9nR4gakO \</div>
-                <div>-d description="Anthony Smith" \</div>
-                <div>-d email="anthony.smith.78@example.com"</div>
-              </div>
-            </div>
-            <div className={styles.technoContainer}>
-              <img src={require('../images/techno/excel.svg')} alt="excel" />
-              <img src={require('../images/techno/python.svg')} alt="python" />
-              <img src={require('../images/techno/java.svg')} alt="java" />
-              <img
-                src={require('../images/techno/javascript.svg')}
-                alt="javascript"
               />
-              <img src={require('../images/techno/xml.svg')} alt="xml" />
-              <img src={require('../images/techno/r.svg')} alt="r" />
+              <APIDescription
+                title="One Single Interface"
+                description="All datasets on Tokendata are available via the same API, irrespective of who originally published the data or in what format."
+              />
+              <APIDescription
+                title="New Data Added Weekly"
+                description="New datasets are added to Tokendata every week. Need some data we don’t have yet? Email us and we can add it for you."
+              />
+              <APIDescription
+                title="The Last API You’ll Ever Need"
+                description="Token Data abstracts away your need to handle multiple sources and ever-changing publication formats. Get your data via Tokendata, and don’t worry about fickle publishers ever again."
+              />
+            </div>
+            <div className={styles.terminalContainer}>
+              <div className={styles.terminalWindow}>
+                <div className={styles.terminalWindowCircle} />
+                <div className={styles.terminalWindowCircle} />
+                <div className={styles.terminalWindowCircle} />
+
+                <div className={styles.terminal}>
+                  <div>$ curl https://tokendata.ai/v1/datasets \</div>
+                  <div>-u sk_test_BQokikJOvBiI2HlWgH4olfQ2: \</div>
+                  <div>-d source=tok_1Cr8602eZvKYlo2C9nR4gakO \</div>
+                  <div>-d description="Anthony Smith" \</div>
+                  <div>-d email="anthony.smith.78@example.com"</div>
+                </div>
+              </div>
+              <div className={styles.technoContainer}>
+                <img src={require('../images/techno/excel.svg')} alt="excel" />
+                <img
+                  src={require('../images/techno/python.svg')}
+                  alt="python"
+                />
+                <img src={require('../images/techno/java.svg')} alt="java" />
+                <img
+                  src={require('../images/techno/javascript.svg')}
+                  alt="javascript"
+                />
+                <img src={require('../images/techno/xml.svg')} alt="xml" />
+                <img src={require('../images/techno/r.svg')} alt="r" />
+              </div>
             </div>
           </div>
         </Section>
@@ -295,14 +297,7 @@ class TechnologyPage extends Component {
               title="Our insights powered by AI"
               text="To help our internal team of data scientists, we rely on the best data scientist of the world, through the recurrent organisation of prize competitions, to improve our indicators’ accuracy."
             />
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-end',
-                marginLeft: 45,
-              }}
-            >
+            <div className={styles.aiContainer}>
               <div style={{ marginBottom: 30, display: 'flex' }}>
                 <TagRectangle />
               </div>

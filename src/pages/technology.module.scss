@@ -3,10 +3,20 @@
 .horizontal-container {
   display: flex;
   margin-bottom: 15px;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }
 
 .horizontal-text {
   margin-left: 30px;
+
+  @media (max-width: $breakpoint-sm) {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .blue-background {
@@ -25,6 +35,10 @@
   bottom: -560px;
   right: -300px;
   animation: rotate linear infinite 300s;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 .triangle-background {
@@ -40,6 +54,58 @@
     #fef4fe 50%,
     #fef4fe 100%
   );
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.vertical-boxes {
+  position: relative;
+  display: flex;
+  padding-left: 15px;
+  margin-right: 45px;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.data-container {
+  display: flex;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+}
+
+.data-texts {
+  max-width: 780px;
+  margin-left: 30px;
+  flex-shrink: 0;
+
+  @media (max-width: $breakpoint-sm) {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.api-container {
+  display: flex;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.terminal-container {
+  position: relative;
+  margin-left: 60px;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 .terminal {
@@ -104,6 +170,17 @@
 
   color: $color-black;
   background: $color-white;
+}
+
+.ai-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 45px;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 @keyframes rotate {
