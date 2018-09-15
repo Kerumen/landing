@@ -58,17 +58,21 @@ class TeamPage extends Component {
           onEnter={this.handleWaypointEnter}
           onLeave={this.handleWaypointLeave}
         >
-          <div style={{ height: 1010, background: '#FEF4FE' }}>
-            <Section style={{ minHeight: '100%', alignItems: 'center' }}>
+          <div className={styles.container}>
+            <Section
+              style={{
+                minHeight: 1010,
+                alignItems: 'center',
+              }}
+            >
               <Title style={{ marginBottom: 60 }}>About us</Title>
-              <div style={{ display: 'flex' }}>
+              <div className={styles.descriptionContainer}>
                 <div className={styles.description}>
                   <p>
                     Born in 2017 TokenData is the result of an in-depth
                     reflection and long-term work. Here’s our story.
                   </p>
                   <p>
-                    {' '}
                     When in 2015 we started to hear about the Consensys project
                     - https://thebkp.com - it was like everything we knew
                     collapsed. We then dig into the Blockchain subject and we

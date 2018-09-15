@@ -1,10 +1,30 @@
 @import '../styles/variables';
 
+.container {
+  background: #fef4fe;
+
+  @media (max-width: $breakpoint-sm) {
+    padding-top: 60px;
+  }
+}
+
+.description-container {
+  display: flex;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
 .description {
   flex: 1;
   text-align: justify;
   & + & {
     margin-left: 30px;
+
+    @media (max-width: $breakpoint-sm) {
+      margin-left: 0;
+    }
   }
 }
 
