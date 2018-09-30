@@ -34,6 +34,44 @@
   position: relative;
   & + & {
     margin-left: 30px;
+
+    @media (max-width: $breakpoint-sm) {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: 50px;
+  }
+  &:hover {
+    .team-member-description {
+      opacity: 1;
+    }
+  }
+}
+
+.team-member-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  line-height: 1.25;
+  opacity: 0;
+  transition: opacity ease 0.1s;
+}
+
+.team-member-link {
+  display: flex;
+  align-items: center;
+  & + & {
+    margin-left: 8px;
   }
 }
 
@@ -52,6 +90,10 @@
   flex-wrap: wrap;
   & + & {
     margin-top: 75px;
+
+    @media (max-width: $breakpoint-sm) {
+      margin-top: 0;
+    }
   }
 }
 

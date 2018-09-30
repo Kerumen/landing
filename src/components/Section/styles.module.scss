@@ -31,4 +31,8 @@
 .column {
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: $breakpoint-sm) {
+    align-items: center;
+  }
 }
