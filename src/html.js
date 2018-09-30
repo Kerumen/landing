@@ -17,7 +17,7 @@ class HTML extends Component {
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
           />
-              
+
           <meta
             name="google-site-verification"
             content="oEjuU_v9N3pyVpN__4aWjAIlYvJjlXZzI4jGXmP4oOc"
