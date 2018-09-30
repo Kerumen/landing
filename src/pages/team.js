@@ -179,13 +179,13 @@ class TeamPage extends Component {
             </Section>
           </div>
         </Waypoint>
-        <Section style={{ padding: '200px 30px' }}>
+        <Section style={{ padding: '200px 30px 0px' }}>
           <TitleAndText
             title="Our Team to the moon"
             style={{ marginBottom: 25 }}
           />
           <Button
-            href="mailto:alexis@tokendata.ai"
+            href="https://angel.co/tokendata/"
             style={{ marginBottom: 100 }}
           >
             Join us
@@ -284,13 +284,18 @@ class TeamPage extends Component {
             />
           </div>
         </Section>
-        {/* <Section style={{ padding: '200px 30px' }}>
+        <Section style={{ padding: 30 }}>
           <TitleAndText
             title="Advisors & Investors"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis eget libero eget consectetur. Sed a luctus mauris, sit amet rhoncus justo. Donec quis imperdiet ligula."
-            style={{ marginBottom: 100 }}
+            style={{ marginBottom: 25 }}
           />
-          <div className={styles.teamRow}>
+          <Button
+            href="mailto:alexis@tokendata.ai"
+            style={{ marginBottom: 100 }}
+          >
+            Join us
+          </Button>
+          {/* <div className={styles.teamRow}>
             <TeamBox
               name="Alexis Berthoud"
               description="We deliver the deepest Data Lake ever on the blockchain ecosystem. Our datasets are available via API and directly over Python, R or Excel."
@@ -311,9 +316,9 @@ class TeamPage extends Component {
               description="We deliver the deepest Data Lake ever on the blockchain ecosystem. Our datasets are available via API and directly over Python, R or Excel."
               color="#FDEFE9"
             />
-          </div>
+          </div> */}
         </Section>
-        <Section style={{ padding: '200px 30px', alignItems: 'center' }}>
+        {/* <Section style={{ padding: '200px 30px', alignItems: 'center' }}>
           <Title style={{ marginBottom: 100 }}>Our partners</Title>
           <div className={styles.partners}>
             <div className={styles.partner}>
