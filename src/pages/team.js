@@ -12,7 +12,15 @@ import Button from '../components/Button'
 
 import styles from './team.module.scss'
 
-const TeamBox = ({ name, job, description, linkedIn, github, color }) => (
+const TeamBox = ({
+  name,
+  job,
+  description,
+  linkedIn,
+  github,
+  school,
+  color,
+}) => (
   <div className={styles.teamBox}>
     <div className={styles.teamBackground} style={{ background: color }} />
     <Box
@@ -78,7 +86,8 @@ const TeamBox = ({ name, job, description, linkedIn, github, color }) => (
         )}
       </div>
     </div>
-    <div style={{ fontSize: 16, marginTop: 5 }}>{job}</div>
+    <div style={{ fontSize: 18, marginTop: 5 }}>{job}</div>
+    <div style={{ fontSize: 12, marginTop: 5, color: '#586468' }}>{school}</div>
   </div>
 )
 
@@ -195,6 +204,7 @@ class TeamPage extends Component {
               name="Alexis Berthoud"
               job="Chief Executive Officer"
               description="Alexis is an engineer with 10 years of experience in entrepreneurship, in investment banks and industry. He dreams of creating a robust global network of blockchain enthusiasts Passionate about startups and disruptive digital innovations, he has managed for the last 3 years CINQS - acquired on December 2016 by Chabé Group (Europe leader in private chauffeurs) and lead a high-level team to increase revenue from 0 to up to 12M€."
+              school="Ecole des Mines and Paris Dauphine University graduate"
               linkedIn="https://www.linkedin.com/in/alexis-b-/"
               color="#FDEFE9"
             />
@@ -202,6 +212,7 @@ class TeamPage extends Component {
               name="Agathe Jambu Merlin"
               job="Chief Operating Officer"
               description="Agathe is a fullstack data scientist with strong interests in Machine Learning & Quantitative Finance with a passion for data analysis. She continually seeks to discover the hidden signals in alternative data and to evangelize the world about the blockchain revolution. With an educational background in Economics, she is deeply involved in both the technical & business aspects of finding alpha sources for the Blockchain community, leading research efforts on numerous datasets."
+              school="Stanford and Paris Sorbonne University graduate"
               linkedIn="https://www.linkedin.com/in/agathe-jambu-merlin/"
               color="#FDEFE9"
             />
@@ -209,6 +220,7 @@ class TeamPage extends Component {
               name="Steed Monteiro"
               job="Chief Agile Officer"
               description="Ex-CTO and french ProductHunt leader, he has a 10 years background in Entrepreneurship. Passionate about Start-up and Disruptive Digital Innovations. He is also « agile développement » coach."
+              school="Graduated in Computer Science, Paris Jussieu University"
               linkedIn="https://www.linkedin.com/in/steedmonteiro/"
               color="#FDEFE9"
             />
@@ -216,6 +228,7 @@ class TeamPage extends Component {
               name="Ethan Sebban"
               job="Chief Data Officer"
               description="Ex-CTO for CINQS. Founder of many project like Drop Feature by Techcrunch. He launched his first app for iOS at age 16 and he is a early bitcoin investor in 2013. Back end and product design specialist, he is passionate about Start-up, Data and Finance."
+              school="Graduated in Finance and Computer Science, Paris Dauphine University"
               linkedIn="https://www.linkedin.com/in/ethansebban/"
               color="#FDEFE9"
             />
@@ -225,6 +238,7 @@ class TeamPage extends Component {
               name="Yann Pringault"
               job="Fullstack Developer"
               description="Yann is a developper with over 5 years of experience. Tech specialist on Node.js, React, React Native and MongoDB he is also passionate about product and design."
+              school="42 school graduate"
               linkedIn="https://www.linkedin.com/in/yann-pringault-98747291/"
               github="https://github.com/Kerumen"
               color="#FCF6CE"
@@ -248,6 +262,7 @@ class TeamPage extends Component {
               name="Yijing Li"
               job="Genius Junior Data Scientist"
               description="She has a passion to be a excellent Data Scientist in the future. She is mainly engaging in some Machine Learning (Deep learning) project now. Her work involves Web Scraping, Data Analysis, Building Model, Classification and Prediction. She believes « Only freedom from vanity can show one's lofty aspirations; and only tranquility of mind can help him to achieve something really lasting. »"
+              school="Master student of Biostatistics in University of California, Davis"
               linkedIn="https://www.linkedin.com/in/yijing-li-676a06155/"
               github="https://github.com/liyijing024"
               color="#FCF6CE"
