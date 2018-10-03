@@ -247,6 +247,7 @@ class TeamPage extends Component {
               name="Max Huang"
               job="Legendary Senior Data Scientist"
               description="Max is a resourceful Data Scientist / AI Guru with over ten years’ experience in modeling, simulation, prediction, validation, testing, measurement, analyzing, optimization from top research institutes and industries of aerospace, machinery, manufacturing, real estate, automotive, finance. Hi is trilingual (English, German, and Mandarin) with excellent written and verbal communication skills. He was awarded four times best paper/presentation at highly rated international conferences."
+              school="PhD Hamburg University of Technology"
               linkedIn="https://www.linkedin.com/in/maxdata/"
               color="#FCF6CE"
             />
@@ -254,6 +255,7 @@ class TeamPage extends Component {
               name="Partha Sen"
               job="Crypto Senior Data Scientist"
               description="Partha has 20 years of tech experiences and has been working on applying Machine Learning models to crypto economy for more than two years. He masters the creation of equity trading strategies and algorithmic trading based on machine learning. MBA Finance graduate from Nit Durgapur & Engineering graduate from Sardar Vallabhbhai National Institute Of Technology Nit."
+              school="Graduated of MBA in finance National Institute of Technology Durgapur"
               linkedIn="https://www.linkedin.com/in/parthasennet/"
               github="https://github.com/parthasen"
               color="#FCF6CE"
@@ -273,6 +275,7 @@ class TeamPage extends Component {
               name="Sophie Gervais"
               job="Marketing Specialist"
               description="Sophie is a Marketing specialist, graduated from the MIT. She masters external as well as internal communication and has worked on top A companies such as RedBull & Instagram on growing their communities and help these companies recruit the best talents."
+              school="Graduated of Massachusetts Institute of Technology in Computational Science"
               linkedIn="https://www.linkedin.com/in/sophie-gervais-1565a8a8/"
               color="#E9FAFF"
             />
@@ -280,6 +283,7 @@ class TeamPage extends Component {
               name="Jonathan Nabais"
               job="Marketing Specialist"
               description="Jonathan Nabais is a marketer with over four years of diversified experience in marketing. He helps companies implement coherent strategies to stimulate their growth. He has hands-on managing several projects like NapoleonX in international markets, involved in blockchain since 2017."
+              school="MBA in Digital Strategy of Golden Gate University"
               linkedIn="https://www.linkedin.com/in/jonathannabais/"
               color="#E9FAFF"
             />
