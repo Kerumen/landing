@@ -41,6 +41,7 @@ const steps = [
     past: false,
     when: 'T2 2019',
     what: [
+      'Token Generation Event',
       'Token Listing on Top 5 Security Exchange',
       'Governing council, member recruitment',
       'Strategy development plan',
@@ -51,7 +52,6 @@ const steps = [
     when: 'T3 2019',
     what: [
       'Development of local headquarters',
-      'Token Generation Event',
       'Monopoly Market',
       'Enlargement to the traditional AI companies market',
     ],
