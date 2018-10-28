@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Waypoint from 'react-waypoint'
 
+import { openMailchimpModal } from '../helpers'
+
 import Layout from '../components/Layout'
 import Section from '../components/Section'
 import Title from '../components/Title'
@@ -13,7 +15,7 @@ import Line from '../components/Line'
 import styles from './technology.module.scss'
 
 const Subscribe = () => (
-  <Button href="https://tokendata.typeform.com/to/eUeyVn/">Subscribe</Button>
+  <Button onClick={openMailchimpModal}>More details</Button>
 )
 
 const VerticalBox = ({ title, text }) => {
