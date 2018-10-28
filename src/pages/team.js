@@ -38,7 +38,9 @@ const TeamBox = ({
         retina={false}
         style={{ width: '100%' }}
       />
-      <div className={styles.teamMemberDescription}>{description}</div>
+      {!!description && (
+        <div className={styles.teamMemberDescription}>{description}</div>
+      )}
     </Box>
     <div
       style={{
@@ -300,6 +302,31 @@ class TeamPage extends Component {
               description="Paul is a research fellow at « Droit & Croissance » “Rules for Growth”, an open independent non-partisan think tank (which takes part in public debates, assists policymakers and influences legislators) while pursuing a PHD at Paris Assas University. He’s also an Msc in Law & Finance candidate at the University of Oxford."
               linkedIn="https://www.linkedin.com/in/paul-oudin/"
               color="#E9FAFF"
+            />
+          </div>
+        </Section>
+        <Section style={{ padding: '200px 30px 0px' }}>
+          <TitleAndText title="Research Team" style={{ marginBottom: 50 }} />
+          <div className={styles.teamRow}>
+            <TeamBox
+              name="Atif Ellahie"
+              linkedIn="https://www.linkedin.com/in/atifellahie/"
+              color="#FDEFE9"
+            />
+            <TeamBox
+              name="Daniele Macciocchi"
+              linkedIn="https://www.linkedin.com/in/daniele-macciocchi-2a66a650/"
+              color="#FDEFE9"
+            />
+            <TeamBox
+              name="Thomas Bourveau"
+              linkedIn="https://www.linkedin.com/in/thomas-bourveau-862a4516/"
+              color="#FDEFE9"
+            />
+            <TeamBox
+              name="Emmanuel de George"
+              linkedIn="https://www.linkedin.com/in/emmanuel-de-george-9111658b/"
+              color="#FDEFE9"
             />
           </div>
         </Section>
