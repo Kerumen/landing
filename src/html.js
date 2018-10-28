@@ -23,6 +23,7 @@ class HTML extends Component {
             content="oEjuU_v9N3pyVpN__4aWjAIlYvJjlXZzI4jGXmP4oOc"
           />
 
+          {/* Localize */}
           <script src="https://global.localizecdn.com/localize.js" />
           <script
             dangerouslySetInnerHTML={{
@@ -39,6 +40,19 @@ class HTML extends Component {
               `,
             }}
           />
+
+          {/* Mailchimp */}
+          <script
+            type="text/javascript"
+            src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+            data-dojo-config="usePlainJson: true, isDebug: false"
+          />
+          {/* <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"4a11c93b3bc3fb3fa2bb52e8b","lid":"a10b749ce9","uniqueMethods":true}) })`,
+            }}
+          /> */}
 
           {this.props.headComponents}
         </head>

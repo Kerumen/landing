@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import Button from '../../Button'
+
 import styles from './styles.module.scss'
 
 const Dropdown = ({ children, items, align = 'left', width = 200, color }) => (
@@ -13,13 +15,16 @@ const Dropdown = ({ children, items, align = 'left', width = 200, color }) => (
         }
         style={{ width }}
       >
-        {items.map(
-          ({ name, to, href }) =>
-            to ? (
+        {items.map(({ name, to, href, onClick }) => {
+          if (!!to) {
+            return (
               <Link key={name} to={to} className={styles.subLink}>
                 {name}
               </Link>
-            ) : (
+            )
+          }
+          if (!!href) {
+            return (
               <a
                 key={name}
                 href={href}
@@ -30,7 +35,15 @@ const Dropdown = ({ children, items, align = 'left', width = 200, color }) => (
                 {name}
               </a>
             )
-        )}
+          }
+          if (!!onClick) {
+            return (
+              <Button key={name} onClick={onClick} variation="link">
+                {name}
+              </Button>
+            )
+          }
+        })}
       </div>
     </div>
   </div>

@@ -36,6 +36,8 @@
 }
 
 .link {
+  display: inline-block;
+  cursor: pointer;
   color: $color-black;
   &:not(:last-child) {
     margin-right: 15px;

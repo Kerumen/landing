@@ -8,6 +8,8 @@ import Title from '../components/Title'
 import Image from '../components/Image'
 import Button from '../components/Button'
 
+import { openMailchimpModal } from '../helpers'
+
 import WhyBloc from './Index/WhyBloc'
 import ICOProgress from './Index/ICOProgress'
 import Timeline from './Index/Timeline'
@@ -30,8 +32,8 @@ const WhitelistButton = () => {
 }
 
 const SeeMore = () => (
-  <Button to="/whitepaper" variation="orange">
-    White Paper
+  <Button onClick={openMailchimpModal} variation="orange">
+    WhitePaper
   </Button>
 )
 

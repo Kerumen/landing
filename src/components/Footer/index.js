@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
+import { openMailchimpModal } from '../../helpers'
 
 import styles from './styles.module.scss'
 
@@ -195,9 +196,9 @@ const Footer = () => (
           THE WEBSITE.
         </p>
         <div className={styles.links}>
-          <Link to="/whitepaper" className={styles.link}>
+          <div onClick={openMailchimpModal} className={styles.link}>
             Terms & Conditions
-          </Link>
+          </div>
           <a href="mailto:hello@tokendata.ai" className={styles.link}>
             Contact Us
           </a>
