@@ -70,6 +70,18 @@ class Header extends Component {
                   name: 'Whitepaper',
                   onClick: openMailchimpModal,
                 },
+                {
+                  name: 'Investor Deck',
+                  onClick: openMailchimpModal,
+                },
+                {
+                  name: 'TokenSales Detail',
+                  onClick: openMailchimpModal,
+                },
+                {
+                  name: 'Contribution Terms',
+                  onClick: openMailchimpModal,
+                },
               ]}
             >
               Documents

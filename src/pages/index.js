@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Waypoint from 'react-waypoint'
 
 import Layout from '../components/Layout'
@@ -32,9 +32,18 @@ const WhitelistButton = () => {
 }
 
 const SeeMore = () => (
-  <Button onClick={openMailchimpModal} variation="orange">
-    WhitePaper
-  </Button>
+  <div style={{ display: 'flex' }}>
+    <Button onClick={openMailchimpModal} variation="orange">
+      WhitePaper
+    </Button>
+    <Button
+      onClick={openMailchimpModal}
+      variation="pink"
+      style={{ marginLeft: 20 }}
+    >
+      All documents
+    </Button>
+  </div>
 )
 
 const BallVideo = ({ name }) => (

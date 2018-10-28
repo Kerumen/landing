@@ -38,9 +38,9 @@ const Dropdown = ({ children, items, align = 'left', width = 200, color }) => (
           }
           if (!!onClick) {
             return (
-              <Button key={name} onClick={onClick} variation="link">
+              <div key={name} onClick={onClick} className={styles.subLink}>
                 {name}
-              </Button>
+              </div>
             )
           }
         })}

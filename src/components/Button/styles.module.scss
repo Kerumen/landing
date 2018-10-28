@@ -32,6 +32,13 @@
   background: rgba(246, 209, 111, 0.5);
 }
 
+.pink {
+  @extend .button;
+
+  color: $color-black;
+  background: #fcddcf;
+}
+
 .link {
   padding: 0;
   border: none;
