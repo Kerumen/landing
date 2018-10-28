@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import cx from 'classnames'
 
+import { openMailchimpModal } from '../../helpers'
+
 import MenuLink from './MenuLink'
 import Dropdown from './Dropdown'
 
@@ -66,7 +68,19 @@ class Header extends Component {
               items={[
                 {
                   name: 'Whitepaper',
-                  to: '/whitepaper',
+                  onClick: openMailchimpModal,
+                },
+                {
+                  name: 'Investor Deck',
+                  onClick: openMailchimpModal,
+                },
+                {
+                  name: 'TokenSales Detail',
+                  onClick: openMailchimpModal,
+                },
+                {
+                  name: 'Contribution Terms',
+                  onClick: openMailchimpModal,
                 },
               ]}
             >

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Waypoint from 'react-waypoint'
 
 import Layout from '../components/Layout'
@@ -7,6 +7,8 @@ import TitleAndText from '../components/TitleAndText'
 import Title from '../components/Title'
 import Image from '../components/Image'
 import Button from '../components/Button'
+
+import { openMailchimpModal } from '../helpers'
 
 import WhyBloc from './Index/WhyBloc'
 import ICOProgress from './Index/ICOProgress'
@@ -30,9 +32,18 @@ const WhitelistButton = () => {
 }
 
 const SeeMore = () => (
-  <Button to="/whitepaper" variation="orange">
-    White Paper
-  </Button>
+  <div style={{ display: 'flex' }}>
+    <Button onClick={openMailchimpModal} variation="orange">
+      WhitePaper
+    </Button>
+    <Button
+      onClick={openMailchimpModal}
+      variation="pink"
+      style={{ marginLeft: 20 }}
+    >
+      All documents
+    </Button>
+  </div>
 )
 
 const BallVideo = ({ name }) => (

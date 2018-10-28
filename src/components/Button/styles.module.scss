@@ -31,3 +31,26 @@
   color: $color-black;
   background: rgba(246, 209, 111, 0.5);
 }
+
+.pink {
+  @extend .button;
+
+  color: $color-black;
+  background: #fcddcf;
+}
+
+.link {
+  padding: 0;
+  border: none;
+  display: block;
+  font-weight: bold;
+  background: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  color: $color-black;
+  outline: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
