@@ -30,7 +30,7 @@ const steps = [
   },
   {
     past: false,
-    when: 'S1 2019',
+    when: 'T1 2019',
     what: [
       'AI index improvement',
       'Alternative Data Set integration for AI modeling',
@@ -39,9 +39,28 @@ const steps = [
   },
   {
     past: false,
-    when: 'S2 2019',
+    when: 'T2 2019',
     what: [
-      'Order management Interface',
+      'Token Listing on Top 5 Security Exchange',
+      'Governing council, member recruitment',
+      'Strategy development plan',
+    ],
+  },
+  {
+    past: false,
+    when: 'T3 2019',
+    what: [
+      'Development of local headquarters',
+      'Token Generation Event',
+      'Monopoly Market',
+      'Enlargement to the traditional AI companies market',
+    ],
+  },
+  {
+    past: false,
+    when: 'T4 2019',
+    what: [
+      'Order management interface',
       'Valuation Index supervised and unsupervised method',
       'Unvaluation index',
     ],
@@ -78,7 +97,7 @@ class Timeline extends Component {
           className={styles.inner}
           style={{
             padding: `0px ${padding}px`,
-            width: `${steps.length * (260 + 182) + padding * 2 - 182}px`,
+            width: `${steps.length * (280 + 179) + padding * 2 - 179}px`,
           }}
         >
           <div className={styles.lines} />

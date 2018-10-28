@@ -96,33 +96,32 @@ class IndexPage extends Component {
                   Why are we pursuing an ICO?
                 </Title>
                 <div>
-                  TokenData has the ambitious goal of revolutionizing one of the
-                  biggest industries there is : Asset Management. To pursue this
-                  mission, we need funding, but we also need support from a
-                  like-minded community, which is why a token sale is the best
-                  option for us to raise funding
+                  TokenData is an asset back token and the TDA token is the
+                  first European security token powered by the newest Ethereum
+                  high standard security smart contract to offer its holders an
+                  unique quarterly share profit distribution.
                 </div>
               </div>
               <Image name="tornado" className={styles.backgroundImage} />
               <div>
                 <div className={styles.whyBlocsRow}>
                   <WhyBloc
-                    title="Utility Program"
-                    content="The TDA token is used to access the platform’s services. Token Data is committed to applying a real time exchange rate available on a reference market."
+                    title="Share Profit Program"
+                    content="Each trimester, we get the token status distribution and allocate up to 45% of profits to all the token holders, in proportion to the number token that each investor holds. The payment of share profit will be proceed in ETH."
                   />
                   <WhyBloc
                     title="Top Holder Program"
-                    content="We provide the largest holders of TDA Tokens with unlimited access to a range of the data lake."
+                    content="Our top holders program offers a discount up to 50% of the licence price for the largest holders of TDA tokens."
                   />
                 </div>
                 <div className={styles.whyBlocsRow}>
                   <WhyBloc
-                    title="Loyalty Program"
-                    content="A part of the TDA tokens received from sales of services will be redistributed quarterly to the holders of TDA in proportion to their holdings in exchange of social selling service."
+                    title="Bonus Holder Program"
+                    content="Each month, and until the first anniversary of the ICO, a bonus corresponding to 1/12 of 20% of the number of TDA Tokens held by each investor will be paid by TokenData (corresponding to a maximum bonus of 20%) in TDA token."
                   />
                   <WhyBloc
-                    title="Bonus Program"
-                    content="Each semester until the second anniversary of the ICO, a bonus of the TDA Tokens held by each investor will be paid by Token Data, provided the investor has never transferred the Tokens to a different address than granted during the ICO."
+                    title="Token as a payment"
+                    content="To access to our services, Token TDA is committed to applying a real time exchange rate available on a reference market to TDA Tokens, to which we will be able to apply a discount in order to reward the token holder."
                   />
                 </div>
               </div>

@@ -299,7 +299,7 @@ class TechnologyPage extends Component {
             />
             <div className={styles.aiContainer}>
               <div style={{ marginBottom: 30, display: 'flex' }}>
-                <TagRectangle />
+                <TagRectangle>Trending Data feed</TagRectangle>
               </div>
               <div style={{ marginBottom: 30, display: 'flex' }}>
                 <TagRectangle white>Scam Rating</TagRectangle>
@@ -307,11 +307,13 @@ class TechnologyPage extends Component {
               </div>
               <div style={{ marginBottom: 30, display: 'flex' }}>
                 <TagRectangle>Team Solidity</TagRectangle>
-                <TagRectangle>Technology</TagRectangle>
+                <TagRectangle>Smart Weekly Report</TagRectangle>
               </div>
               <div style={{ display: 'flex' }}>
                 <TagRectangle>Risk Index</TagRectangle>
-                <TagRectangle width={180} />
+                <TagRectangle white width={180}>
+                  Technology
+                </TagRectangle>
               </div>
             </div>
           </div>
