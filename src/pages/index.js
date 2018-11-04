@@ -20,10 +20,7 @@ import styles from './index.module.scss'
 const WhitelistButton = () => {
   return (
     <div className={styles.whitelistButtonContainer}>
-      <Button
-        href="https://tokendata.typeform.com/to/eUeyVn/"
-        style={{ width: 225 }}
-      >
+      <Button onClick={openMailchimpModal} style={{ width: 225 }}>
         Get whitelisted
       </Button>
       <div className={styles.whitelistButtonIco}>TDA ICO to be announced</div>
@@ -127,8 +124,8 @@ class IndexPage extends Component {
                 </div>
                 <div className={styles.whyBlocsRow}>
                   <WhyBloc
-                    title="Bonus Holder Program"
-                    content="Each month, and until the first anniversary of the ICO, a bonus corresponding to 1/12 of 20% of the number of TDA Tokens held by each investor will be paid by TokenData (corresponding to a maximum bonus of 20%) in TDA token."
+                    title="Bonus Holder"
+                    content="Each month, and until the first anniversary of the ICO, a bonus up to 20% of the number of TDA Tokens held by each investor will be paid in token."
                   />
                   <WhyBloc
                     title="Token as a payment"
