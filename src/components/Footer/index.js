@@ -24,7 +24,7 @@ const Footer = () => (
         <img alt="linkedin" src={require('../../images/social/linkedin.svg')} />
       </a>
       <a
-        href="https://t.me/joinchat/AAAAAEnpmczvxh-EC90FtQ/"
+        href="https://t.me/tokendataofficial"
         className={styles.socialLink}
         target="_blank"
         rel="noopener noreferrer"

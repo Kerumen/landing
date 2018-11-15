@@ -97,7 +97,7 @@ class Header extends Component {
                 },
                 {
                   name: 'Telegram',
-                  href: 'https://t.me/joinchat/AAAAAEnpmczvxh-EC90FtQ/',
+                  href: 'https://t.me/tokendataofficial',
                 },
                 { name: 'Mail', href: 'mailto:hello@tokendata.ai' },
                 {
