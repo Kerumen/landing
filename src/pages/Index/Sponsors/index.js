@@ -6,35 +6,36 @@ import Image from '../../../components/Image'
 import styles from './styles.module.scss'
 
 const partners = [
-  { name: 'Astek', type: 'text' },
-  { name: 'Bankex', type: 'text' },
-  { name: 'Coinbase', type: 'text' },
-  { name: 'Columbia', type: 'logo' },
-  { name: 'Crypto Valley', type: 'text' },
-  { name: 'EPFL', type: 'logo' },
-  { name: 'Ethereum', type: 'logo' },
-  { name: 'GCP', type: 'text' },
-  { name: 'London Business School', type: 'logo' },
-  { name: 'Maddyness', type: 'logo' },
-  { name: 'Medium', type: 'logo' },
-  { name: 'Mothers', type: 'logo' },
-  { name: 'Product Hunt', type: 'text' },
-  { name: 'Steemit', type: 'logo' },
-  { name: 'SwissLegal', type: 'text' },
-  { name: 'TNW', type: 'text' },
-  { name: 'Vaud', type: 'text' },
-  { name: 'WeStart', type: 'text' },
+  { name: 'Astek', size: [103, 28] },
+  { name: 'Bankex', size: [125, 34] },
+  { name: 'Coinbase', size: [103, 36] },
+  { name: 'Columbia', size: [55, 59] },
+  { name: 'Crypto Valley', size: [107, 21] },
+  { name: 'EPFL', size: [46, 52] },
+  { name: 'Ethereum', size: [80, 53] },
+  { name: 'GCP', size: [155, 40] },
+  // { name: 'London Business School', size: [] },
+  // { name: 'Maddyness', size: [] },
+  { name: 'Medium', size: [80, 60] },
+  //{ name: 'Mothers', size: [80, 80] },
+  { name: 'Product Hunt', size: [133, 24] },
+  { name: 'Steemit', size: [70, 53] },
+  { name: 'SwissLegal', size: [112, 56] },
+  { name: 'TNW', size: [80, 34] },
+  { name: 'Vaud', size: [80, 16] },
+  { name: 'WeStart', size: [76, 20] },
 ]
 
 const Sponsors = () => (
   <div className={styles.container}>
-    {partners.map(({ name, type }) => (
-      <div className={cx(styles.image, styles[type])}>
+    {partners.map(({ name, size: [width, height] }) => (
+      <div className={styles.image}>
         <Image
           key={name}
           type="sponsors"
           name={name.replace(/ /g, '-').toLowerCase()}
-          retina={false}
+          retina={true}
+          // style={{ width, height }}
         />
       </div>
     ))}

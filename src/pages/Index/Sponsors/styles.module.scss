@@ -16,12 +16,9 @@
 }
 
 .image {
-  margin: 30px 15px;
+  margin: 50px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 10%;
-  > img {
-    height: 40px;
-  }
+  flex-basis: 15%;
 }
