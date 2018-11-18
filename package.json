@@ -11,6 +11,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
+    "serve": "gatsby serve",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +21,7 @@
     "gatsby-plugin-google-analytics": "2.0.7",
     "gatsby-plugin-react-helmet": "3.0.2",
     "gatsby-plugin-sass": "2.0.4",
+    "gatsby-plugin-sitemap": "2.0.2",
     "gatsby-source-filesystem": "2.0.8",
     "gatsby-transformer-json": "2.1.5",
     "node-sass": "4.10.0",

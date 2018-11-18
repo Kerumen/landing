@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Token Data',
-    siteUrl: 'https://tokendata.ai/',
+    siteUrl: 'https://tokendata.ai',
     description:
       'Token Data is the first platform which extract, collect and build an awesome datalake of the crypto-market to empower the decision maker.',
   },
@@ -22,6 +22,12 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-114689148-1',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/Index/*'],
       },
     },
   ],
