@@ -1,5 +1,9 @@
 .container {
   margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 25px;
 }
 
 .row {
@@ -12,5 +16,9 @@
 }
 
 .image {
-  margin: 0 20px;
+  margin: 50px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 15%;
 }
