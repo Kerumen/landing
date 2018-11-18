@@ -130,59 +130,71 @@ class TeamPage extends Component {
               <Title style={{ marginBottom: 60 }}>About us</Title>
               <div className={styles.descriptionContainer}>
                 <div className={styles.description}>
-                  <p>
-                    Born in 2017 TokenData is the result of an in-depth
-                    reflection and long-term work. Here’s our story.
+                  <p className={styles.descriptionBig}>
+                    TokenData is the first platform that builds and executes
+                    professional investment decisions, relying on an awesome
+                    crypto-assets datalake.
                   </p>
                   <p>
-                    When in 2015 we started to hear about the Consensys project
-                    - https://thebkp.com - it was like everything we knew
-                    collapsed. We then dig into the Blockchain subject and we
-                    felt like a new world was opening its doors to us.
+                    With the{' '}
+                    <a
+                      href="https://thebkp.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: 'inherit', textDecoration: 'underline' }}
+                    >
+                      Brooklyn Project
+                    </a>{' '}
+                    in 2015, everything we knew collapsed. We then dove into the
+                    Blockchain and the Ethereum protocol: a new world was
+                    opening its doors to us.
                   </p>
                   <p>
-                    We also discovered the Ethereum project, and started to
-                    follow and support all the extraordinary programs that
-                    happened in 2016. The rocket was launched, and more and more
-                    companies started to finance themselves through ICOs. We
-                    therefore had to - due to the impossibility to support all
-                    new promising projects - start collecting data in the aim of
-                    evaluation. At this point, we realized that the traditional
-                    methods of analysis we used to know do not apply here. For
-                    two reasons: 1) Ecosystem stakeholders are very different
-                    from traditional investment circles and thus from
-                    decision-making behaviors. 2) The data available was not
-                    sufficient for the application of financial models and
-                    econometric analysis acknowledged.
+                    We started to follow and support all the extraordinary
+                    programs that began to unravel in 2016. The rocket was
+                    launched, and more and more companies started to raise funds
+                    through ICOs. Due to the impossibility to support all new
+                    promising projects, we had to start collecting data for
+                    evaluation purposes.
+                  </p>
+                  <p className={styles.descriptionBig}>
+                    At this point, traditional methods of analysis we used to
+                    know could not apply any longer.
+                  </p>
+                  <p>
+                    Cryptosphere stakeholders are very different from
+                    traditional investors and have different decision-making
+                    behaviors.
                   </p>
                 </div>
                 <div className={styles.description}>
                   <p>
-                    We started to focus on Big Data methodologies and more
-                    specifically on artificial intelligence. Since 2017, we are
-                    collecting millions of data on the Blockchain sector. For
-                    this purpose, we are using the most advanced machine
-                    learning technologies and try to create alpha sources of
-                    alternative and derived data.
+                    We focused on Big Data methodology and Artificial
+                    Intelligence, the most efficients technologies for
+                    understanding those circles. We have collected a great deal
+                    of data on the crypto-assets ecosystem.
                   </p>
                   <p>
-                    These past years saw an explosion in the number of companies
-                    funded through ICOs, and many of them turned out to be
-                    scams. While our tools allowed us to detect them relatively
-                    early, we realized that many contributors had been tempted
-                    by investments in projects that would never see the light of
-                    day. This type of behavior, if it lasts for too long and
-                    attracts too many fraudsters, can lead to an anti-selection
-                    phenomenon on the market and discourage contributors who
-                    wish to support the best ICOs.
+                    We developed a platform, offering reliable, complete
+                    datasets and improved new indicators to empower our clients.
+                    A whole new level of decision-making technology was born for
+                    professional investors.
+                  </p>
+                  <p className={styles.descriptionBig}>
+                    We provide investors with the best technology through our
+                    trading terminal.
                   </p>
                   <p>
-                    That's why since the beginning of 2017 we have been working
-                    on the development of a platform to spread our work to as
-                    many people as possible, by offering reliable and complete
-                    datasets as well as by creating and improving new indicators
-                    to allow the eco-system of the Blockchain to grow even
-                    faster.
+                    As Bloomberg’s “Bloom” did in the 90’s for traditional
+                    markets, our box delivers billions of reliable datas through
+                    streaming canals as well as FIX APIs.
+                  </p>
+                  <p>
+                    As of date, we collect more than 2 billions datas every day
+                    and we are able to share with our users 150 fondamental
+                    variables about crypto-assets companies as well as financial
+                    datas (historical & current) from more than 40 crypto
+                    exchanges.
                   </p>
                   <Line />
                 </div>
@@ -196,7 +208,7 @@ class TeamPage extends Component {
             style={{ marginBottom: 25 }}
           />
           <Button
-            href="https://angel.co/tokendata/"
+            href="https://angel.co/tokendata/jobs"
             style={{ marginBottom: 100 }}
           >
             Join us
@@ -306,7 +318,17 @@ class TeamPage extends Component {
           </div>
         </Section>
         <Section style={{ padding: '200px 30px 0px' }}>
-          <TitleAndText title="Research Team" style={{ marginBottom: 50 }} />
+          <TitleAndText
+            title="Advisors & Partners"
+            style={{ marginBottom: 25 }}
+          />
+
+          <Button
+            href="mailto:alexis@tokendata.ai"
+            style={{ marginBottom: 100 }}
+          >
+            Join us
+          </Button>
           <div className={styles.teamRow}>
             <TeamBox
               name="Atif Ellahie"
@@ -341,40 +363,6 @@ class TeamPage extends Component {
               color="#FDEFE9"
             />
           </div>
-        </Section>
-        <Section style={{ padding: 30 }}>
-          <TitleAndText
-            title="Advisors & Investors"
-            style={{ marginBottom: 25 }}
-          />
-          <Button
-            href="mailto:alexis@tokendata.ai"
-            style={{ marginBottom: 100 }}
-          >
-            Join us
-          </Button>
-          {/* <div className={styles.teamRow}>
-            <TeamBox
-              name="Alexis Berthoud"
-              description="We deliver the deepest Data Lake ever on the blockchain ecosystem. Our datasets are available via API and directly over Python, R or Excel."
-              color="#FDEFE9"
-            />
-            <TeamBox
-              name="Alexis Berthoud"
-              description="We deliver the deepest Data Lake ever on the blockchain ecosystem. Our datasets are available via API and directly over Python, R or Excel."
-              color="#FDEFE9"
-            />
-            <TeamBox
-              name="Alexis Berthoud"
-              description="We deliver the deepest Data Lake ever on the blockchain ecosystem. Our datasets are available via API and directly over Python, R or Excel."
-              color="#FDEFE9"
-            />
-            <TeamBox
-              name="Alexis Berthoud"
-              description="We deliver the deepest Data Lake ever on the blockchain ecosystem. Our datasets are available via API and directly over Python, R or Excel."
-              color="#FDEFE9"
-            />
-          </div> */}
         </Section>
         {/* <Section style={{ padding: '200px 30px', alignItems: 'center' }}>
           <Title style={{ marginBottom: 100 }}>Our partners</Title>
