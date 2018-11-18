@@ -14,6 +14,10 @@
   }
 }
 
+.terms {
+  text-transform: uppercase;
+}
+
 .column {
   font-size: 10px;
   font-weight: 500;
@@ -62,4 +66,9 @@
 
   @media (max-width: $breakpoint-sm) {
   }
+}
+
+.terms-link {
+  color: inherit;
+  text-decoration: underline;
 }
