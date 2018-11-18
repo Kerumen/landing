@@ -67,6 +67,11 @@ class Header extends Component {
               color={color}
               items={[
                 {
+                  name: 'Press Release',
+                  href:
+                    'https://gallery.mailchimp.com/4a11c93b3bc3fb3fa2bb52e8b/files/f81e8582-8cb3-46ab-a20f-58b282dd306d/aboutus_td.pdf',
+                },
+                {
                   name: 'Whitepaper',
                   onClick: openMailchimpModal,
                 },
