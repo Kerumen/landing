@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Waypoint from 'react-waypoint'
 
 import Layout from '../components/Layout'
@@ -20,10 +20,10 @@ import styles from './index.module.scss'
 const WhitelistButton = () => {
   return (
     <div className={styles.whitelistButtonContainer}>
-      <Button onClick={openMailchimpModal} style={{ width: 225 }}>
-        Get whitelisted
+      <Button onClick={openMailchimpModal} style={{ width: 260 }}>
+        Participate to Private Sale
       </Button>
-      <div className={styles.whitelistButtonIco}>TDA ICO to be announced</div>
+      <div className={styles.whitelistButtonIco}>Get info about our STO</div>
     </div>
   )
 }
@@ -75,7 +75,8 @@ class IndexPage extends Component {
         <Section row>
           <TitleAndText
             title="Unleash the power of the world’s crypto data"
-            text="TokenData is the first platform which extract, collect and build an awesome datalake of the crypto-market to empower the decision maker."
+            text="TokenData is the first platform that builds and executes professional investment decisions, relying on an awesome crypto-assets Data Lake."
+            textStyle={{ fontWeight: 500 }}
             renderExtra={WhitelistButton}
             withRectangle
             className={styles.firstTitle}

@@ -8,6 +8,7 @@ import styles from './styles.module.scss'
 const TitleAndText = ({
   title,
   text,
+  textStyle,
   withRectangle,
   renderExtra,
   className,
@@ -18,7 +19,9 @@ const TitleAndText = ({
     <Title style={{ marginBottom: 15, position: 'relative', zIndex: 1 }}>
       {title}
     </Title>
-    <div className={styles.text}>{text}</div>
+    <div className={styles.text} style={textStyle}>
+      {text}
+    </div>
     {renderExtra && <div className={styles.extra}>{renderExtra()}</div>}
   </div>
 )
