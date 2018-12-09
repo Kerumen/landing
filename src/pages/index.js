@@ -116,7 +116,7 @@ class IndexPage extends Component {
                 <div className={styles.whyBlocsRow}>
                   <WhyBloc
                     title="Share Profit Program"
-                    content="Each trimester, we get the token status distribution and allocate up to 45% of profits to all the token holders, in proportion to the number token that each investor holds. The payment of share profit will be proceed in ETH."
+                    content="Each trimester, we get the token status distribution and allocate 30% of profits to all the token holders, in proportion to the number token that each investor holds. The payment of share profit will be proceed in ETH."
                   />
                   <WhyBloc
                     title="Top Holder Program"
