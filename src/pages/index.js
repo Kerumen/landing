@@ -75,7 +75,7 @@ class IndexPage extends Component {
         <Section row>
           <TitleAndText
             title="Unleash the power of the world’s crypto data"
-            text="TokenData is the first platform that builds and executes professional investment decisions, relying on an awesome crypto-assets Data Lake."
+            text="TokenData is the first multi-exchange platform that builds and executes professional investment decisions, relying on an awesome crypto-assets Data Lake."
             textStyle={{ fontWeight: 500 }}
             renderExtra={WhitelistButton}
             withRectangle
