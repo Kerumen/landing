@@ -251,7 +251,7 @@ class TeamPage extends Component {
             <TeamBox
               name="Yann Pringault"
               job="Fullstack Developer"
-              description="Yann is a developper with over 5 years of experience. Tech specialist on Node.js, React, React Native and MongoDB he is also passionate about product and design."
+              description="Yann is a developer with over 5 years of experience. Tech specialist on Node.js, React, React Native and MongoDB he is also passionate about product and design."
               school="42 school graduate"
               linkedIn="https://www.linkedin.com/in/yann-pringault-98747291/"
               github="https://github.com/Kerumen"
