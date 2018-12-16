@@ -286,14 +286,6 @@ class TeamPage extends Component {
           </div>
           <div className={styles.teamRow}>
             <TeamBox
-              name="Sophie Gervais"
-              job="Marketing Specialist"
-              description="Sophie is a Marketing specialist, graduated from the MIT. She masters external as well as internal communication and has worked on top A companies such as RedBull & Instagram on growing their communities and help these companies recruit the best talents."
-              school="Graduated of Massachusetts Institute of Technology in Computational Science"
-              linkedIn="https://www.linkedin.com/in/sophie-gervais-1565a8a8/"
-              color="#E9FAFF"
-            />
-            <TeamBox
               name="Jonathan Nabais"
               job="Marketing Specialist"
               description="Jonathan Nabais is a marketer with over four years of diversified experience in marketing. He helps companies implement coherent strategies to stimulate their growth. He has hands-on managing several projects like NapoleonX in international markets, involved in blockchain since 2017."
