@@ -15,7 +15,9 @@ import Line from '../components/Line'
 import styles from './technology.module.scss'
 
 const Subscribe = () => (
-  <Button onClick={openMailchimpModal}>More details</Button>
+  <Button href="https://tokendata.typeform.com/to/eUeyVn/">
+    Join early access
+  </Button>
 )
 
 const VerticalBox = ({ title, text }) => {

@@ -61,7 +61,7 @@ class Header extends Component {
               Technology
             </MenuLink>
             <MenuLink to="/team" color={color}>
-              About Us
+              Team
             </MenuLink>
             <Dropdown
               color={color}
@@ -127,7 +127,7 @@ class Header extends Component {
               href="https://tokendata.typeform.com/to/eUeyVn/"
               color={color}
             >
-              Get early access
+              Early access
             </MenuLink>
           </div>
           <div className={styles.mobileMenuToggle} onClick={this.toggleMenu}>
@@ -154,7 +154,7 @@ class Header extends Component {
                 className={styles.mobileMenuLink}
                 activeClassName={styles.mobileMenuLinkActive}
               >
-                About Us
+                Team
               </Link>
               <a
                 href="https://tokendata.typeform.com/to/eUeyVn/"
@@ -162,7 +162,7 @@ class Header extends Component {
                 rel="noopener noreferrer"
                 className={styles.mobileMenuLink}
               >
-                Get early access
+                Early access
               </a>
             </div>
           )}
