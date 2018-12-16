@@ -218,7 +218,7 @@ class TeamPage extends Component {
               name="Alexis Berthoud"
               job="Chief Executive Officer"
               description="Alexis is an engineer with 10 years of experience in entrepreneurship, in investment banks and industry. He dreams of creating a robust global network of blockchain enthusiasts Passionate about startups and disruptive digital innovations, he has managed for the last 3 years CINQS - acquired on December 2016 by Chabé Group (Europe leader in private chauffeurs) and lead a high-level team to increase revenue from 0 to up to 12M€."
-              school="Ecole des Mines and Paris Dauphine University graduate"
+              school="Graduated in Engineering and Finance to Ecole des Mines Paris and Dauphine University"
               linkedIn="https://www.linkedin.com/in/alexis-b-/"
               color="#FDEFE9"
             />
@@ -232,7 +232,7 @@ class TeamPage extends Component {
             />
             <TeamBox
               name="Steed Monteiro"
-              job="Chief Agile Officer"
+              job="Chief Technical Officer"
               description="Ex-CTO and french ProductHunt leader, he has a 10 years background in Entrepreneurship. Passionate about Start-up and Disruptive Digital Innovations. He is also « agile développement » coach."
               school="Graduated in Computer Science, Paris Jussieu University"
               linkedIn="https://www.linkedin.com/in/steedmonteiro/"
@@ -324,15 +324,15 @@ class TeamPage extends Component {
           <div className={styles.teamRow}>
             <TeamBox
               name="Atif Ellahie"
-              job="Pr. of Financial reporting analysis at University of Utah"
+              job="Ex-Executive Director at UBS Investment Bank"
               description="Atif is specialized in Quantitative research in accounting and financial economics. HE previously worked for over 10 years in investment banking at UBS in New York and London. He Successfully originated and executed over 55 global M&A advisory, equity and credit transactions in the technology sector with an aggregate deal value of approximately $30 billion."
-              school="London Business School"
+              school="London Business School and CFA"
               linkedIn="https://www.linkedin.com/in/atifellahie/"
               color="#FDEFE9"
             />
             <TeamBox
               name="Daniele Macciocchi"
-              job="Professor Of Accounting"
+              job="PHD in capital market"
               description="Daniel holds a Phd from Luiss Guido Carli University & conducts academic research on the role of information in capital markets. His most recent research papers examine the Cryptocurrency market, the corporate governance role of index funds, and the role of debt contracting in the propagation of financial shocks. He has a background in consulting and worked as a senior consultant and CPA before starting his academic career."
               school="University of Chicago"
               linkedIn="https://www.linkedin.com/in/daniele-macciocchi-2a66a650/"
@@ -340,15 +340,15 @@ class TeamPage extends Component {
             />
             <TeamBox
               name="Thomas Bourveau"
-              job="Assistant Professor Financial Statement Analysis"
+              job="Professor Financial Statement Analysis"
               description="Thomas previously served on the faculty at the Hong Kong University of Science and Technology. He obtained a PhD in Management Science from HEC Paris. Professor Bourveau primarily conducts empirical research. He is most interested in evaluating the implications of regulatory interventions in financial markets, often through the role of information disclosure."
-              school="Columbia Business School"
+              school="Columbia Business School and ENS"
               linkedIn="https://www.linkedin.com/in/thomas-bourveau-862a4516/"
               color="#FDEFE9"
             />
             <TeamBox
               name="Emmanuel de George"
-              job="Assistant Professor of Accounting"
+              job="CFO and ex-Auditor KPMG "
               description="Emmanuel holds a Phd from University of Michigan. Before pursuing an academic career, he was an auditor with KPMG (Australia), where he gained experience auditing both listed and private companies, and their transition to International Financial Reporting Standards (IFRS). Dr. De George’s research concentrates on the economic consequences of accounting regulation, in particular equity market contagion and systemic risk."
               school="London Business School"
               linkedIn="https://www.linkedin.com/in/emmanuel-de-george-9111658b/"
