@@ -102,13 +102,12 @@ class IndexPage extends Component {
             <div style={{ position: 'relative', zIndex: 5 }}>
               <div className={styles.centeredBloc}>
                 <Title style={{ marginBottom: 30 }}>
-                  Why are we pursuing an ICO?
+                  Why are we pursuing an STO?
                 </Title>
                 <div>
                   TokenData is an asset back token and the TDA token is the
-                  first European security token powered by the newest Ethereum
-                  high standard security smart contract to offer its holders an
-                  unique quarterly share profit distribution.
+                  first European security token powered by Ethereum
+                  to offer its holders an unique quarterly share profit distribution.
                 </div>
               </div>
               <Image name="tornado" className={styles.backgroundImage} />
@@ -126,7 +125,7 @@ class IndexPage extends Component {
                 <div className={styles.whyBlocsRow}>
                   <WhyBloc
                     title="Bonus Holder"
-                    content="Each month, and until the first anniversary of the ICO, a bonus up to 20% of the number of TDA Tokens held by each investor will be paid in token."
+                    content="Each month, and until the first anniversary of the STO, a bonus up to 20% of the number of TDA Tokens held by each investor will be paid in token."
                   />
                   <WhyBloc
                     title="Token as a payment"
@@ -135,7 +134,7 @@ class IndexPage extends Component {
                 </div>
               </div>
               {/* <div className={styles.centeredBloc} style={{ marginTop: 300 }}>
-                <Title style={{ marginBottom: 30 }}>TDA Token & ICO</Title>
+                <Title style={{ marginBottom: 30 }}>TDA Token & STO</Title>
                 <div>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                   lobortis eget libero eget consectetur. Sed a luctus mauris,
