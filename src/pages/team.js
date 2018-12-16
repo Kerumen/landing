@@ -340,7 +340,7 @@ class TeamPage extends Component {
             />
             <TeamBox
               name="Thomas Bourveau"
-              job="Professor Financial Statement Analysis"
+              job="Professor Financial Statement Analysis in Crypto-asset"
               description="Thomas previously served on the faculty at the Hong Kong University of Science and Technology. He obtained a PhD in Management Science from HEC Paris. Professor Bourveau primarily conducts empirical research. He is most interested in evaluating the implications of regulatory interventions in financial markets, often through the role of information disclosure."
               school="Columbia Business School and ENS"
               linkedIn="https://www.linkedin.com/in/thomas-bourveau-862a4516/"
@@ -348,7 +348,7 @@ class TeamPage extends Component {
             />
             <TeamBox
               name="Emmanuel de George"
-              job="CFO and ex-Auditor KPMG "
+              job="Chief Financial Officer and Auditor KPMG "
               description="Emmanuel holds a Phd from University of Michigan. Before pursuing an academic career, he was an auditor with KPMG (Australia), where he gained experience auditing both listed and private companies, and their transition to International Financial Reporting Standards (IFRS). Dr. De George’s research concentrates on the economic consequences of accounting regulation, in particular equity market contagion and systemic risk."
               school="London Business School"
               linkedIn="https://www.linkedin.com/in/emmanuel-de-george-9111658b/"
