@@ -127,7 +127,7 @@ class Header extends Component {
               href="https://tokendata.typeform.com/to/eUeyVn/"
               color={color}
             >
-              Beta
+              Get early access
             </MenuLink>
           </div>
           <div className={styles.mobileMenuToggle} onClick={this.toggleMenu}>
@@ -162,7 +162,7 @@ class Header extends Component {
                 rel="noopener noreferrer"
                 className={styles.mobileMenuLink}
               >
-                Beta
+                Get early access
               </a>
             </div>
           )}
