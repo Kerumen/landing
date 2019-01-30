@@ -322,7 +322,7 @@ class TeamPage extends Component {
             Join us
           </Button>
           <div className={styles.teamRow}>
-            <TeamBox
+            {/*<TeamBox
               name="Atif Ellahie"
               job="Ex-Executive Director at UBS Investment Bank"
               description="Atif is specialized in Quantitative research in accounting and financial economics. HE previously worked for over 10 years in investment banking at UBS in New York and London. He Successfully originated and executed over 55 global M&A advisory, equity and credit transactions in the technology sector with an aggregate deal value of approximately $30 billion."
