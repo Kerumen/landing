@@ -322,38 +322,7 @@ class TeamPage extends Component {
             Join us
           </Button>
           <div className={styles.teamRow}>
-            {/*<TeamBox
-              name="Atif Ellahie"
-              job="Ex-Executive Director at UBS Investment Bank"
-              description="Atif is specialized in Quantitative research in accounting and financial economics. HE previously worked for over 10 years in investment banking at UBS in New York and London. He Successfully originated and executed over 55 global M&A advisory, equity and credit transactions in the technology sector with an aggregate deal value of approximately $30 billion."
-              school="London Business School and CFA"
-              linkedIn="https://www.linkedin.com/in/atifellahie/"
-              color="#FDEFE9"
-            />
-            <TeamBox
-              name="Daniele Macciocchi"
-              job="PHD in capital market"
-              description="Daniel holds a Phd from Luiss Guido Carli University & conducts academic research on the role of information in capital markets. His most recent research papers examine the Cryptocurrency market, the corporate governance role of index funds, and the role of debt contracting in the propagation of financial shocks. He has a background in consulting and worked as a senior consultant and CPA before starting his academic career."
-              school="University of Chicago"
-              linkedIn="https://www.linkedin.com/in/daniele-macciocchi-2a66a650/"
-              color="#FDEFE9"
-            />
-            <TeamBox
-              name="Thomas Bourveau"
-              job="Professor Financial Statement Analysis in Crypto-asset"
-              description="Thomas previously served on the faculty at the Hong Kong University of Science and Technology. He obtained a PhD in Management Science from HEC Paris. Professor Bourveau primarily conducts empirical research. He is most interested in evaluating the implications of regulatory interventions in financial markets, often through the role of information disclosure."
-              school="Columbia Business School and ENS"
-              linkedIn="https://www.linkedin.com/in/thomas-bourveau-862a4516/"
-              color="#FDEFE9"
-            />
-            <TeamBox
-              name="Emmanuel de George"
-              job="Chief Financial Officer and Auditor KPMG "
-              description="Emmanuel holds a Phd from University of Michigan. Before pursuing an academic career, he was an auditor with KPMG (Australia), where he gained experience auditing both listed and private companies, and their transition to International Financial Reporting Standards (IFRS). Dr. De George’s research concentrates on the economic consequences of accounting regulation, in particular equity market contagion and systemic risk."
-              school="London Business School"
-              linkedIn="https://www.linkedin.com/in/emmanuel-de-george-9111658b/"
-              color="#FDEFE9"
-            />
+            
           </div>
         </Section>
         {/* <Section style={{ padding: '200px 30px', alignItems: 'center' }}>
