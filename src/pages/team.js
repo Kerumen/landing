@@ -293,7 +293,7 @@ class TeamPage extends Component {
               linkedIn="https://www.linkedin.com/in/jonathannabais/"
               color="#E9FAFF"
             />
-            <TeamBox
+            /*<TeamBox
               name="Sophie Vermeille"
               job="Legal ICO & IPO  Structuring Specialist"
               description="Sophie is a French lawyer, researcher and entrepreneur. She advises debtor companies, credit institutions and distressed investors on out-of-court refinancings and restructurings, as well as on in-court insolvency proceedings, both domestic or cross-border. I also advise advise investors and shareholder advocacy groups on corporate governance, proxy contests etc. She is an ICO structuration specialist."
@@ -306,7 +306,7 @@ class TeamPage extends Component {
               description="Paul is a research fellow at « Droit & Croissance » “Rules for Growth”, an open independent non-partisan think tank (which takes part in public debates, assists policymakers and influences legislators) while pursuing a PHD at Paris Assas University. He’s also an Msc in Law & Finance candidate at the University of Oxford."
               linkedIn="https://www.linkedin.com/in/paul-oudin/"
               color="#E9FAFF"
-            />
+            />*/
           </div>
         </Section>
         <Section style={{ padding: '200px 30px 0px' }}>
